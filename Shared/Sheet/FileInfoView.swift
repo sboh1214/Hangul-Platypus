@@ -4,7 +4,7 @@ import CoreHwp
 struct FileInfoView: View {
     let header: HwpFileHeader
     let toggleSheet: () -> Void
-    
+
     var body: some View {
         Text("Hwp File Info")
         Button("Dismiss") {toggleSheet()}

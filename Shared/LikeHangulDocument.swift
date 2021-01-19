@@ -10,17 +10,17 @@ extension UTType {
 
 struct LikeHangulDocument: FileDocument {
     var hwp: HwpFile
-    
+
     init() {
         hwp = HwpFile()
     }
-    
+
     static var readableContentTypes: [UTType] { [.hwp] }
-    
+
     init(configuration: ReadConfiguration) throws {
         hwp = try HwpFile(fromWrapper: configuration.file)
     }
-    
+
     func fileWrapper(configuration: WriteConfiguration) throws -> FileWrapper {
         throw CocoaError(.persistentStoreSave)
     }

@@ -1,13 +1,8 @@
-//
-//  Tests_iOS.swift
-//  Tests iOS
-//
-//  Created by Seungbin Oh on 2021/01/19.
-//
-
 import XCTest
 
+// swiftlint:disable type_name
 class Tests_iOS: XCTestCase {
+    // swiftlint:enable type_name
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -15,7 +10,8 @@ class Tests_iOS: XCTestCase {
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
 
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        // In UI tests it’s important to set the initial state - such as interface orientation -
+        // required for your tests before they run. The setUp method is a good place to do this.
     }
 
     override func tearDownWithError() throws {

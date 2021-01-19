@@ -42,6 +42,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		361090FA25B78CE60002F1C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3625A03325B6D35200C5C3FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3625A03F25B6D35300C5C3FE;
+			remoteInfo = "Like Hangul (iOS)";
+		};
+		3610910025B78D210002F1C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3625A03325B6D35200C5C3FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3625A04725B6D35300C5C3FE;
+			remoteInfo = "Like Hangul (macOS)";
+		};
 		3625A05125B6D35300C5C3FE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3625A03325B6D35200C5C3FE /* Project object */;
@@ -130,7 +144,6 @@
 				3625A05325B6D35300C5C3FE /* Tests iOS */,
 				3625A05E25B6D35300C5C3FE /* Tests macOS */,
 				3625A04125B6D35300C5C3FE /* Products */,
-				36D48D7F25B6D577000434B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -195,13 +208,6 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
-		36D48D7F25B6D577000434B4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		36D48DA225B6D79A000434B4 /* Sheet */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +254,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3625A06C25B6D35300C5C3FE /* Build configuration list for PBXNativeTarget "Like Hangul (iOS)" */;
 			buildPhases = (
+				3646C91C25B7874B004FAD92 /* ShellScript */,
 				3625A03C25B6D35300C5C3FE /* Sources */,
 				3625A03D25B6D35300C5C3FE /* Frameworks */,
 				3625A03E25B6D35300C5C3FE /* Resources */,
@@ -268,6 +275,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3625A06F25B6D35300C5C3FE /* Build configuration list for PBXNativeTarget "Like Hangul (macOS)" */;
 			buildPhases = (
+				3646C91D25B7877A004FAD92 /* ShellScript */,
 				3625A04425B6D35300C5C3FE /* Sources */,
 				3625A04525B6D35300C5C3FE /* Frameworks */,
 				3625A04625B6D35300C5C3FE /* Resources */,
@@ -296,6 +304,7 @@
 			);
 			dependencies = (
 				3625A05225B6D35300C5C3FE /* PBXTargetDependency */,
+				3610910125B78D210002F1C2 /* PBXTargetDependency */,
 			);
 			name = "Tests iOS";
 			productName = "Tests iOS";
@@ -314,6 +323,7 @@
 			);
 			dependencies = (
 				3625A05D25B6D35300C5C3FE /* PBXTargetDependency */,
+				361090FB25B78CE60002F1C2 /* PBXTargetDependency */,
 			);
 			name = "Tests macOS";
 			productName = "Tests macOS";
@@ -402,6 +412,43 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3646C91C25B7874B004FAD92 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		3646C91D25B7877A004FAD92 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3625A03C25B6D35300C5C3FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -462,6 +509,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		361090FB25B78CE60002F1C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3625A03F25B6D35300C5C3FE /* Like Hangul (iOS) */;
+			targetProxy = 361090FA25B78CE60002F1C2 /* PBXContainerItemProxy */;
+		};
+		3610910125B78D210002F1C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3625A04725B6D35300C5C3FE /* Like Hangul (macOS) */;
+			targetProxy = 3610910025B78D210002F1C2 /* PBXContainerItemProxy */;
+		};
 		3625A05225B6D35300C5C3FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3625A03F25B6D35300C5C3FE /* Like Hangul (iOS) */;
@@ -705,7 +762,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Like-Hangul (iOS)";
+				TEST_TARGET_NAME = "Like Hangul (iOS)";
 			};
 			name = Debug;
 		};
@@ -727,7 +784,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Like-Hangul (iOS)";
+				TEST_TARGET_NAME = "Like Hangul (iOS)";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -750,7 +807,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "Like-Hangul (macOS)";
+				TEST_TARGET_NAME = "Like Hangul (macOS)";
 			};
 			name = Debug;
 		};
@@ -772,7 +829,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "Like-Hangul (macOS)";
+				TEST_TARGET_NAME = "Like Hangul (macOS)";
 			};
 			name = Release;
 		};
