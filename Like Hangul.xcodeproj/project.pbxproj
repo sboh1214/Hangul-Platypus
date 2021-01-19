@@ -3,20 +3,42 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3625A05525B6D35300C5C3FE /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3625A05425B6D35300C5C3FE /* Tests_iOS.swift */; };
 		3625A06025B6D35300C5C3FE /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3625A05F25B6D35300C5C3FE /* Tests_macOS.swift */; };
-		3625A06225B6D35300C5C3FE /* Like_HangulApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3625A03825B6D35300C5C3FE /* Like_HangulApp.swift */; };
-		3625A06325B6D35300C5C3FE /* Like_HangulApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3625A03825B6D35300C5C3FE /* Like_HangulApp.swift */; };
-		3625A06425B6D35300C5C3FE /* Like_HangulDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3625A03925B6D35300C5C3FE /* Like_HangulDocument.swift */; };
-		3625A06525B6D35300C5C3FE /* Like_HangulDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3625A03925B6D35300C5C3FE /* Like_HangulDocument.swift */; };
-		3625A06625B6D35300C5C3FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3625A03A25B6D35300C5C3FE /* ContentView.swift */; };
-		3625A06725B6D35300C5C3FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3625A03A25B6D35300C5C3FE /* ContentView.swift */; };
+		3625A06225B6D35300C5C3FE /* LikeHangulApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3625A03825B6D35300C5C3FE /* LikeHangulApp.swift */; };
+		3625A06325B6D35300C5C3FE /* LikeHangulApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3625A03825B6D35300C5C3FE /* LikeHangulApp.swift */; };
+		3625A06425B6D35300C5C3FE /* LikeHangulDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3625A03925B6D35300C5C3FE /* LikeHangulDocument.swift */; };
+		3625A06525B6D35300C5C3FE /* LikeHangulDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3625A03925B6D35300C5C3FE /* LikeHangulDocument.swift */; };
+		3625A06625B6D35300C5C3FE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3625A03A25B6D35300C5C3FE /* MainView.swift */; };
+		3625A06725B6D35300C5C3FE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3625A03A25B6D35300C5C3FE /* MainView.swift */; };
 		3625A06825B6D35300C5C3FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3625A03B25B6D35300C5C3FE /* Assets.xcassets */; };
 		3625A06925B6D35300C5C3FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3625A03B25B6D35300C5C3FE /* Assets.xcassets */; };
+		36D48D7A25B6D56F000434B4 /* CoreHwp in Frameworks */ = {isa = PBXBuildFile; productRef = 36D48D7925B6D56F000434B4 /* CoreHwp */; };
+		36D48D8125B6D577000434B4 /* CoreHwp in Frameworks */ = {isa = PBXBuildFile; productRef = 36D48D8025B6D577000434B4 /* CoreHwp */; };
+		36D48DA425B6D7A9000434B4 /* FileInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D48DA325B6D7A9000434B4 /* FileInfoView.swift */; };
+		36D48DA525B6D7A9000434B4 /* FileInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D48DA325B6D7A9000434B4 /* FileInfoView.swift */; };
+		36D48DB025B6D7F7000434B4 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D48DAF25B6D7F7000434B4 /* SidebarView.swift */; };
+		36D48DB125B6D7F7000434B4 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D48DAF25B6D7F7000434B4 /* SidebarView.swift */; };
+		36D48DBB25B6D819000434B4 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D48DBA25B6D819000434B4 /* PageView.swift */; };
+		36D48DBC25B6D819000434B4 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D48DBA25B6D819000434B4 /* PageView.swift */; };
+		36D48DC225B6D843000434B4 /* TOCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D48DC125B6D843000434B4 /* TOCView.swift */; };
+		36D48DC325B6D843000434B4 /* TOCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D48DC125B6D843000434B4 /* TOCView.swift */; };
+		36D48DCA25B6D869000434B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D48DC925B6D869000434B4 /* ContentView.swift */; };
+		36D48DCB25B6D869000434B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D48DC925B6D869000434B4 /* ContentView.swift */; };
+		36D48DD525B6D8AD000434B4 /* UIHwpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D48DD425B6D8AC000434B4 /* UIHwpView.swift */; };
+		36D48DDB25B6D8D1000434B4 /* NSHwpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D48DDA25B6D8D1000434B4 /* NSHwpView.swift */; };
+		36D48DE125B6D9B9000434B4 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D48DE025B6D9B9000434B4 /* AboutView.swift */; };
+		36D48DE225B6D9B9000434B4 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D48DE025B6D9B9000434B4 /* AboutView.swift */; };
+		36D48DE925B6D9E1000434B4 /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D48DE825B6D9E1000434B4 /* PreferencesView.swift */; };
+		36D48DEA25B6D9E1000434B4 /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D48DE825B6D9E1000434B4 /* PreferencesView.swift */; };
+		36D48DF025B6D9FB000434B4 /* GeneralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D48DEF25B6D9FB000434B4 /* GeneralView.swift */; };
+		36D48DF125B6D9FB000434B4 /* GeneralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D48DEF25B6D9FB000434B4 /* GeneralView.swift */; };
+		36D48DF725B6DA30000434B4 /* AdvancedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D48DF625B6DA30000434B4 /* AdvancedView.swift */; };
+		36D48DF825B6DA30000434B4 /* AdvancedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D48DF625B6DA30000434B4 /* AdvancedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +59,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3625A03825B6D35300C5C3FE /* Like_HangulApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Like_HangulApp.swift; sourceTree = "<group>"; };
-		3625A03925B6D35300C5C3FE /* Like_HangulDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Like_HangulDocument.swift; sourceTree = "<group>"; };
-		3625A03A25B6D35300C5C3FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3625A03825B6D35300C5C3FE /* LikeHangulApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeHangulApp.swift; sourceTree = "<group>"; };
+		3625A03925B6D35300C5C3FE /* LikeHangulDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeHangulDocument.swift; sourceTree = "<group>"; };
+		3625A03A25B6D35300C5C3FE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		3625A03B25B6D35300C5C3FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3625A04025B6D35300C5C3FE /* Like-Hangul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Like-Hangul.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3625A04025B6D35300C5C3FE /* Like Hangul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Like Hangul.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3625A04325B6D35300C5C3FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3625A04825B6D35300C5C3FE /* Like-Hangul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Like-Hangul.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3625A04825B6D35300C5C3FE /* Like Hangul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Like Hangul.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3625A04A25B6D35300C5C3FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3625A04B25B6D35300C5C3FE /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		3625A05025B6D35300C5C3FE /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +74,17 @@
 		3625A05B25B6D35300C5C3FE /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3625A05F25B6D35300C5C3FE /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		3625A06125B6D35300C5C3FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36D48DA325B6D7A9000434B4 /* FileInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileInfoView.swift; sourceTree = "<group>"; };
+		36D48DAF25B6D7F7000434B4 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		36D48DBA25B6D819000434B4 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		36D48DC125B6D843000434B4 /* TOCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOCView.swift; sourceTree = "<group>"; };
+		36D48DC925B6D869000434B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		36D48DD425B6D8AC000434B4 /* UIHwpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHwpView.swift; sourceTree = "<group>"; };
+		36D48DDA25B6D8D1000434B4 /* NSHwpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSHwpView.swift; sourceTree = "<group>"; };
+		36D48DE025B6D9B9000434B4 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		36D48DE825B6D9E1000434B4 /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
+		36D48DEF25B6D9FB000434B4 /* GeneralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralView.swift; sourceTree = "<group>"; };
+		36D48DF625B6DA30000434B4 /* AdvancedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36D48D7A25B6D56F000434B4 /* CoreHwp in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36D48D8125B6D577000434B4 /* CoreHwp in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,15 +130,20 @@
 				3625A05325B6D35300C5C3FE /* Tests iOS */,
 				3625A05E25B6D35300C5C3FE /* Tests macOS */,
 				3625A04125B6D35300C5C3FE /* Products */,
+				36D48D7F25B6D577000434B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		3625A03725B6D35300C5C3FE /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				3625A03825B6D35300C5C3FE /* Like_HangulApp.swift */,
-				3625A03925B6D35300C5C3FE /* Like_HangulDocument.swift */,
-				3625A03A25B6D35300C5C3FE /* ContentView.swift */,
+				36D48DE725B6D9D8000434B4 /* Preferences */,
+				36D48DC825B6D85A000434B4 /* Content */,
+				36D48DAE25B6D7E1000434B4 /* Sidebar */,
+				36D48DA225B6D79A000434B4 /* Sheet */,
+				3625A03825B6D35300C5C3FE /* LikeHangulApp.swift */,
+				3625A03925B6D35300C5C3FE /* LikeHangulDocument.swift */,
+				3625A03A25B6D35300C5C3FE /* MainView.swift */,
 				3625A03B25B6D35300C5C3FE /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -112,8 +152,8 @@
 		3625A04125B6D35300C5C3FE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3625A04025B6D35300C5C3FE /* Like-Hangul.app */,
-				3625A04825B6D35300C5C3FE /* Like-Hangul.app */,
+				3625A04025B6D35300C5C3FE /* Like Hangul.app */,
+				3625A04825B6D35300C5C3FE /* Like Hangul.app */,
 				3625A05025B6D35300C5C3FE /* Tests iOS.xctest */,
 				3625A05B25B6D35300C5C3FE /* Tests macOS.xctest */,
 			);
@@ -155,12 +195,58 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		36D48D7F25B6D577000434B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		36D48DA225B6D79A000434B4 /* Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				36D48DE025B6D9B9000434B4 /* AboutView.swift */,
+				36D48DA325B6D7A9000434B4 /* FileInfoView.swift */,
+			);
+			path = Sheet;
+			sourceTree = "<group>";
+		};
+		36D48DAE25B6D7E1000434B4 /* Sidebar */ = {
+			isa = PBXGroup;
+			children = (
+				36D48DAF25B6D7F7000434B4 /* SidebarView.swift */,
+				36D48DBA25B6D819000434B4 /* PageView.swift */,
+				36D48DC125B6D843000434B4 /* TOCView.swift */,
+			);
+			path = Sidebar;
+			sourceTree = "<group>";
+		};
+		36D48DC825B6D85A000434B4 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				36D48DC925B6D869000434B4 /* ContentView.swift */,
+				36D48DD425B6D8AC000434B4 /* UIHwpView.swift */,
+				36D48DDA25B6D8D1000434B4 /* NSHwpView.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		36D48DE725B6D9D8000434B4 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				36D48DE825B6D9E1000434B4 /* PreferencesView.swift */,
+				36D48DEF25B6D9FB000434B4 /* GeneralView.swift */,
+				36D48DF625B6DA30000434B4 /* AdvancedView.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3625A03F25B6D35300C5C3FE /* Like-Hangul (iOS) */ = {
+		3625A03F25B6D35300C5C3FE /* Like Hangul (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3625A06C25B6D35300C5C3FE /* Build configuration list for PBXNativeTarget "Like-Hangul (iOS)" */;
+			buildConfigurationList = 3625A06C25B6D35300C5C3FE /* Build configuration list for PBXNativeTarget "Like Hangul (iOS)" */;
 			buildPhases = (
 				3625A03C25B6D35300C5C3FE /* Sources */,
 				3625A03D25B6D35300C5C3FE /* Frameworks */,
@@ -170,14 +256,17 @@
 			);
 			dependencies = (
 			);
-			name = "Like-Hangul (iOS)";
+			name = "Like Hangul (iOS)";
+			packageProductDependencies = (
+				36D48D7925B6D56F000434B4 /* CoreHwp */,
+			);
 			productName = "Like-Hangul (iOS)";
-			productReference = 3625A04025B6D35300C5C3FE /* Like-Hangul.app */;
+			productReference = 3625A04025B6D35300C5C3FE /* Like Hangul.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3625A04725B6D35300C5C3FE /* Like-Hangul (macOS) */ = {
+		3625A04725B6D35300C5C3FE /* Like Hangul (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3625A06F25B6D35300C5C3FE /* Build configuration list for PBXNativeTarget "Like-Hangul (macOS)" */;
+			buildConfigurationList = 3625A06F25B6D35300C5C3FE /* Build configuration list for PBXNativeTarget "Like Hangul (macOS)" */;
 			buildPhases = (
 				3625A04425B6D35300C5C3FE /* Sources */,
 				3625A04525B6D35300C5C3FE /* Frameworks */,
@@ -187,9 +276,12 @@
 			);
 			dependencies = (
 			);
-			name = "Like-Hangul (macOS)";
+			name = "Like Hangul (macOS)";
+			packageProductDependencies = (
+				36D48D8025B6D577000434B4 /* CoreHwp */,
+			);
 			productName = "Like-Hangul (macOS)";
-			productReference = 3625A04825B6D35300C5C3FE /* Like-Hangul.app */;
+			productReference = 3625A04825B6D35300C5C3FE /* Like Hangul.app */;
 			productType = "com.apple.product-type.application";
 		};
 		3625A04F25B6D35300C5C3FE /* Tests iOS */ = {
@@ -253,21 +345,24 @@
 					};
 				};
 			};
-			buildConfigurationList = 3625A03625B6D35200C5C3FE /* Build configuration list for PBXProject "Like-Hangul" */;
+			buildConfigurationList = 3625A03625B6D35200C5C3FE /* Build configuration list for PBXProject "Like Hangul" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
+				ko,
 			);
 			mainGroup = 3625A03225B6D35200C5C3FE;
+			packageReferences = (
+				36D48D7825B6D56F000434B4 /* XCRemoteSwiftPackageReference "Hwp-Swift" */,
+			);
 			productRefGroup = 3625A04125B6D35300C5C3FE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3625A03F25B6D35300C5C3FE /* Like-Hangul (iOS) */,
-				3625A04725B6D35300C5C3FE /* Like-Hangul (macOS) */,
+				3625A03F25B6D35300C5C3FE /* Like Hangul (iOS) */,
+				3625A04725B6D35300C5C3FE /* Like Hangul (macOS) */,
 				3625A04F25B6D35300C5C3FE /* Tests iOS */,
 				3625A05A25B6D35300C5C3FE /* Tests macOS */,
 			);
@@ -312,9 +407,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3625A06425B6D35300C5C3FE /* Like_HangulDocument.swift in Sources */,
-				3625A06225B6D35300C5C3FE /* Like_HangulApp.swift in Sources */,
-				3625A06625B6D35300C5C3FE /* ContentView.swift in Sources */,
+				36D48DA425B6D7A9000434B4 /* FileInfoView.swift in Sources */,
+				36D48DC225B6D843000434B4 /* TOCView.swift in Sources */,
+				36D48DCA25B6D869000434B4 /* ContentView.swift in Sources */,
+				36D48DBB25B6D819000434B4 /* PageView.swift in Sources */,
+				36D48DE125B6D9B9000434B4 /* AboutView.swift in Sources */,
+				3625A06425B6D35300C5C3FE /* LikeHangulDocument.swift in Sources */,
+				36D48DD525B6D8AD000434B4 /* UIHwpView.swift in Sources */,
+				36D48DB025B6D7F7000434B4 /* SidebarView.swift in Sources */,
+				3625A06225B6D35300C5C3FE /* LikeHangulApp.swift in Sources */,
+				36D48DF025B6D9FB000434B4 /* GeneralView.swift in Sources */,
+				36D48DF725B6DA30000434B4 /* AdvancedView.swift in Sources */,
+				3625A06625B6D35300C5C3FE /* MainView.swift in Sources */,
+				36D48DE925B6D9E1000434B4 /* PreferencesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,9 +427,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3625A06525B6D35300C5C3FE /* Like_HangulDocument.swift in Sources */,
-				3625A06325B6D35300C5C3FE /* Like_HangulApp.swift in Sources */,
-				3625A06725B6D35300C5C3FE /* ContentView.swift in Sources */,
+				36D48DA525B6D7A9000434B4 /* FileInfoView.swift in Sources */,
+				36D48DC325B6D843000434B4 /* TOCView.swift in Sources */,
+				36D48DCB25B6D869000434B4 /* ContentView.swift in Sources */,
+				36D48DBC25B6D819000434B4 /* PageView.swift in Sources */,
+				36D48DE225B6D9B9000434B4 /* AboutView.swift in Sources */,
+				3625A06525B6D35300C5C3FE /* LikeHangulDocument.swift in Sources */,
+				36D48DDB25B6D8D1000434B4 /* NSHwpView.swift in Sources */,
+				36D48DB125B6D7F7000434B4 /* SidebarView.swift in Sources */,
+				3625A06325B6D35300C5C3FE /* LikeHangulApp.swift in Sources */,
+				36D48DF125B6D9FB000434B4 /* GeneralView.swift in Sources */,
+				36D48DF825B6DA30000434B4 /* AdvancedView.swift in Sources */,
+				3625A06725B6D35300C5C3FE /* MainView.swift in Sources */,
+				36D48DEA25B6D9E1000434B4 /* PreferencesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,12 +464,12 @@
 /* Begin PBXTargetDependency section */
 		3625A05225B6D35300C5C3FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3625A03F25B6D35300C5C3FE /* Like-Hangul (iOS) */;
+			target = 3625A03F25B6D35300C5C3FE /* Like Hangul (iOS) */;
 			targetProxy = 3625A05125B6D35300C5C3FE /* PBXContainerItemProxy */;
 		};
 		3625A05D25B6D35300C5C3FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3625A04725B6D35300C5C3FE /* Like-Hangul (macOS) */;
+			target = 3625A04725B6D35300C5C3FE /* Like Hangul (macOS) */;
 			targetProxy = 3625A05C25B6D35300C5C3FE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -477,6 +592,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 86Z79M22CQ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
@@ -485,8 +601,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.sboh.Like-Hangul";
-				PRODUCT_NAME = "Like-Hangul";
+				PRODUCT_NAME = "Like Hangul";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -499,6 +616,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 86Z79M22CQ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
@@ -507,8 +625,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.sboh.Like-Hangul";
-				PRODUCT_NAME = "Like-Hangul";
+				PRODUCT_NAME = "Like Hangul";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -524,6 +643,7 @@
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 86Z79M22CQ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -533,8 +653,9 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.sboh.Like-Hangul";
-				PRODUCT_NAME = "Like-Hangul";
+				PRODUCT_NAME = "Like Hangul";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -548,6 +669,7 @@
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 86Z79M22CQ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -557,8 +679,9 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.sboh.Like-Hangul";
-				PRODUCT_NAME = "Like-Hangul";
+				PRODUCT_NAME = "Like Hangul";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -656,7 +779,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3625A03625B6D35200C5C3FE /* Build configuration list for PBXProject "Like-Hangul" */ = {
+		3625A03625B6D35200C5C3FE /* Build configuration list for PBXProject "Like Hangul" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3625A06A25B6D35300C5C3FE /* Debug */,
@@ -665,7 +788,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3625A06C25B6D35300C5C3FE /* Build configuration list for PBXNativeTarget "Like-Hangul (iOS)" */ = {
+		3625A06C25B6D35300C5C3FE /* Build configuration list for PBXNativeTarget "Like Hangul (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3625A06D25B6D35300C5C3FE /* Debug */,
@@ -674,7 +797,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3625A06F25B6D35300C5C3FE /* Build configuration list for PBXNativeTarget "Like-Hangul (macOS)" */ = {
+		3625A06F25B6D35300C5C3FE /* Build configuration list for PBXNativeTarget "Like Hangul (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3625A07025B6D35300C5C3FE /* Debug */,
@@ -702,6 +825,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		36D48D7825B6D56F000434B4 /* XCRemoteSwiftPackageReference "Hwp-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sboh1214/Hwp-Swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		36D48D7925B6D56F000434B4 /* CoreHwp */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36D48D7825B6D56F000434B4 /* XCRemoteSwiftPackageReference "Hwp-Swift" */;
+			productName = CoreHwp;
+		};
+		36D48D8025B6D577000434B4 /* CoreHwp */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36D48D7825B6D56F000434B4 /* XCRemoteSwiftPackageReference "Hwp-Swift" */;
+			productName = CoreHwp;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3625A03325B6D35200C5C3FE /* Project object */;
 }
