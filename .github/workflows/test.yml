@@ -1,0 +1,20 @@
+name: Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+  strategy:
+    matrix:
+      platform: ["iOS", "macOS"]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Test
+      run: xcodebuild test -project Like\ Hangul.xcodeproj -scheme Tests\ ${{ matrix.platform }} -resultBundlePath HwpMac.xcresult | xcpretty
