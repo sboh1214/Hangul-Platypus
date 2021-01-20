@@ -1,11 +1,21 @@
 import SwiftUI
 
+class FileInfoObject: ObservableObject {
+    @Published var fileURL: URL?
+    @Published var isEditable: Bool
+
+    init(fileURL: URL?, isEditable: Bool) {
+        self.fileURL = fileURL
+        self.isEditable = isEditable
+    }
+}
+
 @main
 struct LikeHangulApp: App {
     var body: some Scene {
         DocumentGroup(newDocument: LikeHangulDocument()) { file in
             MainView(document: file.$document)
-            FileInfoView(fileURL: file.fileURL, isEditable: file.isEditable, document: file.document)
+                .environmentObject(FileInfoObject(fileURL: file.fileURL, isEditable: file.isEditable))
         }
         .commands {
             ToolbarCommands()

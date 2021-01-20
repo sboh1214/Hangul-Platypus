@@ -2,9 +2,8 @@ import SwiftUI
 import CoreHwp
 
 struct FileInfoView: View {
-    let fileURL: URL?
-    let isEditable: Bool
-    let document: LikeHangulDocument
+    @Binding var show: Bool
+    @Binding var document: LikeHangulDocument
 
     @State private var tabSelection = Tabs.general
 
@@ -19,7 +18,7 @@ struct FileInfoView: View {
 
     var body: some View {
         TabView(selection: $tabSelection) {
-            GeneralInfoView(fileURL: fileURL, isEditable: isEditable)
+            GeneralInfoView()
                 .tabItem { Label("fileinfo.general".l, systemImage: "star") }.tag(Tabs.general)
             Text("Tab Content 2").tabItem { Label("fileinfo.summary".l, systemImage: "star") }.tag(Tabs.summary)
             Text("Tab Content 3").tabItem { Label("fileinfo.statistic".l, systemImage: "star") }.tag(Tabs.statistic)
@@ -27,11 +26,12 @@ struct FileInfoView: View {
             Text("Tab Content 3").tabItem { Label("fileinfo.picture".l, systemImage: "star") }.tag(Tabs.picture)
             Text("Tab Content 3").tabItem { Label("fileinfo.copyright".l, systemImage: "star") }.tag(Tabs.copyright)
         }.tabViewStyle(DefaultTabViewStyle())
+        Button("Dismiss", action: {show = false})
     }
 }
 
 struct FileInfoViewPreviews: PreviewProvider {
     static var previews: some View {
-        FileInfoView(fileURL: nil, isEditable: false, document: LikeHangulDocument())
+        FileInfoView(show: .constant(true), document: .constant(LikeHangulDocument()))
     }
 }
