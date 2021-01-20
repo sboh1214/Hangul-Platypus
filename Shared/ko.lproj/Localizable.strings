@@ -1,0 +1,12 @@
+"preferences.general" = "일반";
+"preferences.advanced" = "고급";
+
+"sidebar.page" = "페이지 미리보기";
+"sidebar.toc" = "목차";
+
+"fileinfo.general" = "일반";
+"fileinfo.summary" = "문서 요약";
+"fileinfo.statistic" = "문서 통계";
+"fileinfo.font" = "글꼴 정보";
+"fileinfo.picture" = "그림 정보";
+"fileinfo.copyright" = "저작권";
