@@ -1,0 +1,20 @@
+name: Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    strategy:
+      matrix:
+        platform: ["iOS", "macOS"]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Release Build
+      run: xcodebuild -project Like\ Hangul.xcodeproj -scheme Like\ Hangul\ \(${{ matrix.platform }}\) -configuration Release | xcpretty

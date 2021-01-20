@@ -6,7 +6,7 @@ struct AboutView: View {
     }
 }
 
-struct AboutView_Previews: PreviewProvider {
+struct AboutViewPreviews: PreviewProvider {
     static var previews: some View {
         AboutView()
     }

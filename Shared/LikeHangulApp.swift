@@ -5,20 +5,21 @@ struct LikeHangulApp: App {
     var body: some Scene {
         DocumentGroup(newDocument: LikeHangulDocument()) { file in
             MainView(document: file.$document)
+            FileInfoView(fileURL: file.fileURL, isEditable: file.isEditable, document: file.document)
         }
         .commands {
             ToolbarCommands()
             SidebarCommands()
             CommandGroup(replacing: CommandGroupPlacement.appInfo) {
                 Button("한글다운에 관하여...") {
-                    
+
                 }
             }
         }
         //        WindowGroup("About") {
         //            AboutView()
         //        }
-        
+
         #if os(macOS)
         Settings {
             PreferencesView()

@@ -6,7 +6,7 @@ struct AdvancedView: View {
     }
 }
 
-struct AdvancedView_Previews: PreviewProvider {
+struct AdvancedViewPreviews: PreviewProvider {
     static var previews: some View {
         AdvancedView()
     }
