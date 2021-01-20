@@ -32,7 +32,7 @@ func toggleSidebar() {
 }
 #endif
 
-struct MainView_Previews: PreviewProvider {
+struct MainViewPreviews: PreviewProvider {
     static var previews: some View {
         MainView(document: .constant(LikeHangulDocument()))
     }

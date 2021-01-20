@@ -6,7 +6,7 @@ struct TOCView: View {
     }
 }
 
-struct TOCView_Previews: PreviewProvider {
+struct TOCViewPreviews: PreviewProvider {
     static var previews: some View {
         TOCView()
     }

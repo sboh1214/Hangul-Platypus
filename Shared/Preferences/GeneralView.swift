@@ -22,7 +22,7 @@ enum Theme: String, CaseIterable, Identifiable {
     // swiftlint:enable identifier_name
 }
 
-struct GeneralView_Previews: PreviewProvider {
+struct GeneralViewPreviews: PreviewProvider {
     static var previews: some View {
         GeneralView()
     }

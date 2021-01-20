@@ -20,7 +20,7 @@ struct PreferencesView: View {
     }
 }
 
-struct SettingsView_Previews: PreviewProvider {
+struct PreferencesViewPreviews: PreviewProvider {
     static var previews: some View {
         PreferencesView()
     }

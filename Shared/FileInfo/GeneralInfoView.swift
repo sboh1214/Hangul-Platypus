@@ -15,7 +15,7 @@ struct GeneralInfoView: View {
     }
 }
 
-struct GeneralInfoView_Previews: PreviewProvider {
+struct GeneralInfoViewPreviews: PreviewProvider {
     static var previews: some View {
         GeneralInfoView(isEditable: true)
     }

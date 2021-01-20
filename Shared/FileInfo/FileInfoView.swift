@@ -30,7 +30,7 @@ struct FileInfoView: View {
     }
 }
 
-struct FileInfoView_Previews: PreviewProvider {
+struct FileInfoViewPreviews: PreviewProvider {
     static var previews: some View {
         FileInfoView(fileURL: nil, isEditable: false, document: LikeHangulDocument())
     }

@@ -13,7 +13,7 @@ struct UIHwpView: UIViewRepresentable {
     }
 }
 
-struct UIHwpView_Previews: PreviewProvider {
+struct UIHwpViewPreviews: PreviewProvider {
     static var previews: some View {
         UIHwpView()
     }

@@ -13,7 +13,7 @@ struct SidebarView: View {
     }
 }
 
-struct SidebarView_Previews: PreviewProvider {
+struct SidebarViewPreviews: PreviewProvider {
     static var previews: some View {
         SidebarView()
     }

@@ -6,7 +6,7 @@ struct PageView: View {
     }
 }
 
-struct PageView_Previews: PreviewProvider {
+struct PageViewPreviews: PreviewProvider {
     static var previews: some View {
         PageView()
     }

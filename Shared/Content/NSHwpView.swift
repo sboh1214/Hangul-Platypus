@@ -13,7 +13,7 @@ struct NSHwpView: NSViewRepresentable {
     }
 }
 
-struct NSHwpView_Previews: PreviewProvider {
+struct NSHwpViewPreviews: PreviewProvider {
     static var previews: some View {
         NSHwpView()
     }
