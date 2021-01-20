@@ -3,8 +3,6 @@ import SwiftUI
 struct MainView: View {
     @Binding var document: LikeHangulDocument
 
-    @State var isFileInfoPresented: Bool = false
-
     var body: some View {
         NavigationView {
             Group {
@@ -20,12 +18,10 @@ struct MainView: View {
             }
             #endif
             ToolbarItem(placement: .automatic) {
-                Button(action: {isFileInfoPresented = true}, label: {
+                Button(action: {}, label: {
                     Image(systemName: "info.circle")
                 })
             }
-        }.sheet(isPresented: $isFileInfoPresented) {
-            FileInfoView(header: document.hwp.fileHeader, toggleSheet: {isFileInfoPresented = false})
         }
     }
 }

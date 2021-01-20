@@ -5,6 +5,7 @@ struct LikeHangulApp: App {
     var body: some Scene {
         DocumentGroup(newDocument: LikeHangulDocument()) { file in
             MainView(document: file.$document)
+            FileInfoView(fileURL: file.fileURL, isEditable: file.isEditable, document: file.document)
         }
         .commands {
             ToolbarCommands()

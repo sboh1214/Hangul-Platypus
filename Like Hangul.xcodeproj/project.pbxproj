@@ -17,6 +17,10 @@
 		3625A06725B6D35300C5C3FE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3625A03A25B6D35300C5C3FE /* MainView.swift */; };
 		3625A06825B6D35300C5C3FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3625A03B25B6D35300C5C3FE /* Assets.xcassets */; };
 		3625A06925B6D35300C5C3FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3625A03B25B6D35300C5C3FE /* Assets.xcassets */; };
+		3683739D25B7BE2200401C48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3683739F25B7BE2200401C48 /* InfoPlist.strings */; };
+		368373BD25B7C00100401C48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3683739F25B7BE2200401C48 /* InfoPlist.strings */; };
+		369D184225B7B78B001C487E /* GeneralInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369D184125B7B78B001C487E /* GeneralInfoView.swift */; };
+		369D184325B7B78B001C487E /* GeneralInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369D184125B7B78B001C487E /* GeneralInfoView.swift */; };
 		36D48D7A25B6D56F000434B4 /* CoreHwp in Frameworks */ = {isa = PBXBuildFile; productRef = 36D48D7925B6D56F000434B4 /* CoreHwp */; };
 		36D48D8125B6D577000434B4 /* CoreHwp in Frameworks */ = {isa = PBXBuildFile; productRef = 36D48D8025B6D577000434B4 /* CoreHwp */; };
 		36D48DA425B6D7A9000434B4 /* FileInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D48DA325B6D7A9000434B4 /* FileInfoView.swift */; };
@@ -88,6 +92,9 @@
 		3625A05B25B6D35300C5C3FE /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3625A05F25B6D35300C5C3FE /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		3625A06125B6D35300C5C3FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3683739E25B7BE2200401C48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		368373A025B7BE2500401C48 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		369D184125B7B78B001C487E /* GeneralInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralInfoView.swift; sourceTree = "<group>"; };
 		36D48DA325B6D7A9000434B4 /* FileInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileInfoView.swift; sourceTree = "<group>"; };
 		36D48DAF25B6D7F7000434B4 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		36D48DBA25B6D819000434B4 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
@@ -150,13 +157,15 @@
 		3625A03725B6D35300C5C3FE /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				3683739F25B7BE2200401C48 /* InfoPlist.strings */,
 				36D48DE725B6D9D8000434B4 /* Preferences */,
 				36D48DC825B6D85A000434B4 /* Content */,
 				36D48DAE25B6D7E1000434B4 /* Sidebar */,
-				36D48DA225B6D79A000434B4 /* Sheet */,
+				36D48DA225B6D79A000434B4 /* FileInfo */,
 				3625A03825B6D35300C5C3FE /* LikeHangulApp.swift */,
 				3625A03925B6D35300C5C3FE /* LikeHangulDocument.swift */,
 				3625A03A25B6D35300C5C3FE /* MainView.swift */,
+				36D48DE025B6D9B9000434B4 /* AboutView.swift */,
 				3625A03B25B6D35300C5C3FE /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -208,13 +217,13 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
-		36D48DA225B6D79A000434B4 /* Sheet */ = {
+		36D48DA225B6D79A000434B4 /* FileInfo */ = {
 			isa = PBXGroup;
 			children = (
-				36D48DE025B6D9B9000434B4 /* AboutView.swift */,
 				36D48DA325B6D7A9000434B4 /* FileInfoView.swift */,
+				369D184125B7B78B001C487E /* GeneralInfoView.swift */,
 			);
-			path = Sheet;
+			path = FileInfo;
 			sourceTree = "<group>";
 		};
 		36D48DAE25B6D7E1000434B4 /* Sidebar */ = {
@@ -385,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3625A06825B6D35300C5C3FE /* Assets.xcassets in Resources */,
+				3683739D25B7BE2200401C48 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +403,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3625A06925B6D35300C5C3FE /* Assets.xcassets in Resources */,
+				368373BD25B7C00100401C48 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +472,7 @@
 				36D48DE125B6D9B9000434B4 /* AboutView.swift in Sources */,
 				3625A06425B6D35300C5C3FE /* LikeHangulDocument.swift in Sources */,
 				36D48DD525B6D8AD000434B4 /* UIHwpView.swift in Sources */,
+				369D184225B7B78B001C487E /* GeneralInfoView.swift in Sources */,
 				36D48DB025B6D7F7000434B4 /* SidebarView.swift in Sources */,
 				3625A06225B6D35300C5C3FE /* LikeHangulApp.swift in Sources */,
 				36D48DF025B6D9FB000434B4 /* GeneralView.swift in Sources */,
@@ -481,6 +493,7 @@
 				36D48DE225B6D9B9000434B4 /* AboutView.swift in Sources */,
 				3625A06525B6D35300C5C3FE /* LikeHangulDocument.swift in Sources */,
 				36D48DDB25B6D8D1000434B4 /* NSHwpView.swift in Sources */,
+				369D184325B7B78B001C487E /* GeneralInfoView.swift in Sources */,
 				36D48DB125B6D7F7000434B4 /* SidebarView.swift in Sources */,
 				3625A06325B6D35300C5C3FE /* LikeHangulApp.swift in Sources */,
 				36D48DF125B6D9FB000434B4 /* GeneralView.swift in Sources */,
@@ -530,6 +543,18 @@
 			targetProxy = 3625A05C25B6D35300C5C3FE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3683739F25B7BE2200401C48 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3683739E25B7BE2200401C48 /* en */,
+				368373A025B7BE2500401C48 /* ko */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3625A06A25B6D35300C5C3FE /* Debug */ = {
