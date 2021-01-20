@@ -10,9 +10,9 @@ jobs:
   build:
     runs-on: macos-latest
 
-  strategy:
-    matrix:
-      platform: ["iOS", "macOS"]
+    strategy:
+      matrix:
+        platform: ["iOS", "macOS"]
 
     steps:
     - uses: actions/checkout@v2
