@@ -4,7 +4,11 @@ import CoreHwp
 
 extension UTType {
     static var hwp: UTType {
-        UTType(importedAs: "com.haansoft.HancomOfficeViewer.mac.hwp")
+        #if os(iOS)
+        return UTType(importedAs: "kr.co.hancom.hwp")
+        #elseif os(macOS)
+        return UTType(importedAs: "com.haansoft.HancomOfficeViewer.mac.hwp")
+        #endif
     }
 }
 
