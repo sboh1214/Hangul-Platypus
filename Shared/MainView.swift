@@ -12,8 +12,12 @@ struct MainView: View {
                 ContentView()
             }
         }.sheet(isPresented: $showFileInfo) {
+            #if os(macOS)
             FileInfoView(show: $showFileInfo, document: $document)
                 .padding()
+            #else
+            FileInfoView(show: $showFileInfo, document: $document)
+            #endif
         }.toolbar {
             #if os(macOS)
             ToolbarItem(placement: .navigation) {

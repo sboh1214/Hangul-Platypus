@@ -5,9 +5,13 @@ struct GeneralInfoView: View {
 
     var body: some View {
         Form {
-            Text("Hwp File Info")
-            Text(fileInfo.fileURL?.absoluteString ?? "Unknown")
-            Toggle("Editable", isOn: $fileInfo.isEditable)
+            Section {
+                HStack {
+                    Label("File Path", systemImage: "bolt.fill")
+                    Text(fileInfo.fileURL?.absoluteString ?? "Unknown")
+                }
+                Toggle("Editable", isOn: $fileInfo.isEditable).disabled(true)
+            }
         }
     }
 }

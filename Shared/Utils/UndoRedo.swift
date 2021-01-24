@@ -96,5 +96,6 @@ public struct UndoRedo<Value> {
 
     // TODO: Add support for limited-size history; e.g. 50
 
-    // TODO: Potential alternative version supporting foundation undomanager https://developer.apple.com/documentation/foundation/undomanager
+    // TODO: Potential alternative version supporting foundation undomanager
+    // https://developer.apple.com/documentation/foundation/undomanager
 }
