@@ -2,9 +2,8 @@ import SwiftUI
 import CoreHwp
 
 struct FileInfoView: View {
-    let fileURL: URL?
-    let isEditable: Bool
-    let document: LikeHangulDocument
+    @Binding var show: Bool
+    @Binding var document: LikeHangulDocument
 
     @State private var tabSelection = Tabs.general
 
@@ -19,19 +18,23 @@ struct FileInfoView: View {
 
     var body: some View {
         TabView(selection: $tabSelection) {
-            GeneralInfoView(fileURL: fileURL, isEditable: isEditable)
-                .tabItem { Label("일반", systemImage: "star") }.tag(Tabs.general)
-            Text("Tab Content 2").tabItem { Label("문서 요약", systemImage: "star") }.tag(Tabs.summary)
-            Text("Tab Content 3").tabItem { Label("문서 통계", systemImage: "star") }.tag(Tabs.statistic)
-            Text("Tab Content 3").tabItem { Label("글꼴 정보", systemImage: "star") }.tag(Tabs.font)
-            Text("Tab Content 3").tabItem { Label("그림 정보", systemImage: "star") }.tag(Tabs.picture)
-            Text("Tab Content 3").tabItem { Label("저작권", systemImage: "star") }.tag(Tabs.copyright)
+            GeneralInfoView()
+                .tabItem { Label("fileinfo.general".l, systemImage: "star") }.tag(Tabs.general)
+            SummaryView()
+                .tabItem { Label("fileinfo.summary".l, systemImage: "star") }.tag(Tabs.summary)
+            Text("Tab Content 3").tabItem { Label("fileinfo.statistic".l, systemImage: "star") }.tag(Tabs.statistic)
+            Text("Tab Content 3").tabItem { Label("fileinfo.font".l, systemImage: "star") }.tag(Tabs.font)
+            Text("Tab Content 3").tabItem { Label("fileinfo.picture".l, systemImage: "star") }.tag(Tabs.picture)
+            Text("Tab Content 3").tabItem { Label("fileinfo.copyright".l, systemImage: "star") }.tag(Tabs.copyright)
         }.tabViewStyle(DefaultTabViewStyle())
+        #if os(macOS)
+        Button("Dismiss", action: {show = false})
+        #endif
     }
 }
 
 struct FileInfoViewPreviews: PreviewProvider {
     static var previews: some View {
-        FileInfoView(fileURL: nil, isEditable: false, document: LikeHangulDocument())
+        FileInfoView(show: .constant(true), document: .constant(LikeHangulDocument()))
     }
 }

@@ -4,10 +4,10 @@ struct SidebarView: View {
     var body: some View {
         TabView {
             PageView().tabItem {
-                Image(systemName: "list.dash")
+                Label("sidebar.page".l, systemImage: "list.dash")
             }
             TOCView().tabItem {
-                Image(systemName: "square.and.pencil")
+                Label("sidebar.toc".l, systemImage: "square.and.pencil")
             }
         }
     }

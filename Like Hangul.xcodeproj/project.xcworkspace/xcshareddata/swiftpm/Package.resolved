@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/sboh1214/Hwp-Swift.git",
         "state": {
           "branch": null,
-          "revision": "ae21bf695c0f35686e62b795023bd9d0a0a6fbd9",
-          "version": "0.11.0"
+          "revision": "ce0fc19c3b23020cb4c7ae669c9affe4bebe97d4",
+          "version": "0.11.1"
         }
       },
       {
@@ -24,8 +24,8 @@
         "repositoryURL": "https://github.com/CoreOffice/OLEKit.git",
         "state": {
           "branch": null,
-          "revision": "c78476f851d7333c1e479c663731654a3b377a18",
-          "version": "0.3.0"
+          "revision": "2cc7a98b4ac4e9ce022336258a3bc4ff6bfc285b",
+          "version": "0.3.1"
         }
       },
       {
