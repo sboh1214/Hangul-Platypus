@@ -1,25 +1,15 @@
 import SwiftUI
 
 struct GeneralView: View {
-    @State private var selectedTheme = Theme.system
+    @AppStorage("general.theme") private var appTheme: AppTheme = .system
 
     var body: some View {
-        Picker("Theme", selection: $selectedTheme) {
-            Text("System").tag(Theme.system)
-            Text("Light").tag(Theme.light)
-            Text("Dark").tag(Theme.dark)
+        Picker("Theme", selection: $appTheme) {
+            Text("System").tag(AppTheme.system)
+            Text("Light").tag(AppTheme.light)
+            Text("Dark").tag(AppTheme.dark)
         }
     }
-}
-
-enum Theme: String, CaseIterable, Identifiable {
-    case system
-    case light
-    case dark
-
-    // swiftlint:disable identifier_name
-    var id: String { self.rawValue }
-    // swiftlint:enable identifier_name
 }
 
 struct GeneralViewPreviews: PreviewProvider {
