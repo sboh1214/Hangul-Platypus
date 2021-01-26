@@ -1,16 +1,16 @@
 import SwiftUI
 
 struct GeneralInfoView: View {
-    @EnvironmentObject var fileInfo: FileInfoObject
+    @EnvironmentObject var file: FileObject
 
     var body: some View {
         Form {
             Section {
                 HStack {
                     Label("File Path", systemImage: "bolt.fill")
-                    Text(fileInfo.fileURL?.absoluteString ?? "Unknown")
+                    Text(file.fileURL?.absoluteString ?? "Unknown")
                 }
-                Toggle("Editable", isOn: $fileInfo.isEditable).disabled(true)
+                Toggle("Editable", isOn: $file.isEditable).disabled(true)
             }
         }
     }

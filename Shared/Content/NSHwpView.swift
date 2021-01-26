@@ -3,12 +3,30 @@ import CoreHwp
 
 struct NSHwpView: NSViewRepresentable {
     typealias NSViewType = NSTextView
-    
-    var hwpFile: HwpFile
+
+    @EnvironmentObject var file: FileObject
+    var geometry: GeometryProxy
 
     func makeNSView(context: Context) -> NSViewType {
-        let view = NSTextView()
-        hwpFile.sectionArray[0].paragraph[0].paraText?.charArray
+
+        // context.environment.colorScheme == .light
+        let string = NSAttributedString(string: "Hello")
+        let textStorage = NSTextStorage(attributedString: string)
+
+        let layoutManager = NSLayoutManager()
+        textStorage.addLayoutManager(layoutManager)
+
+        let containerSize = CGSize(width: geometry.size.width, height: .greatestFiniteMagnitude)
+        let container = NSTextContainer(size: containerSize)
+        container.widthTracksTextView = true
+        layoutManager.addTextContainer(container)
+        textStorage.addLayoutManager(layoutManager)
+
+        let view = NSTextView(frame: geometry.frame(in: .local), textContainer: container)
+        view.isEditable = false
+        view.isRichText = true
+        view.isSelectable = true
+
         return view
     }
 
@@ -19,6 +37,8 @@ struct NSHwpView: NSViewRepresentable {
 
 struct NSHwpViewPreviews: PreviewProvider {
     static var previews: some View {
-        NSHwpView(hwpFile: HwpFile())
+        GeometryReader { geometry in
+            NSHwpView(geometry: geometry)
+        }
     }
 }
