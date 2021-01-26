@@ -8,11 +8,25 @@ struct NSHwpView: NSViewRepresentable {
     var geometry: GeometryProxy
 
     func makeNSView(context: Context) -> NSViewType {
+        var allString: String = ""
+        
+        file.document.wrappedValue.hwp.sectionArray.forEach { section in
+            section.paragraph.forEach { paragraph in
+                let array = paragraph.paraText?.charArray.compactMap { char -> Character? in
+                    if char.type == .char {
+                        return Character(UnicodeScalar(char.value)!)
+                    } else {
+                        return nil
+                    }
+                }
+                let string = String(array ?? [Character]())
+                allString.append(string)
+            }
+        }
 
         // context.environment.colorScheme == .light
-        let string = NSAttributedString(string: "Hello")
+        let string = NSAttributedString(string: allString)
         let textStorage = NSTextStorage(attributedString: string)
-
         let layoutManager = NSLayoutManager()
         textStorage.addLayoutManager(layoutManager)
 
