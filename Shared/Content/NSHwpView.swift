@@ -9,7 +9,9 @@ struct NSHwpView: NSViewRepresentable {
 
     func makeNSView(context: Context) -> NSViewType {
         var allString: String = ""
-        
+
+        let attribute = file.document.wrappedValue.hwp.docInfo.idMappings.charShapeArray
+
         file.document.wrappedValue.hwp.sectionArray.forEach { section in
             section.paragraph.forEach { paragraph in
                 let array = paragraph.paraText?.charArray.compactMap { char -> Character? in

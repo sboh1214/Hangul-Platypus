@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        //ScrollView([.horizontal, .vertical]) {
+        // ScrollView([.horizontal, .vertical]) {
             GeometryReader { geometry in
                 #if os(iOS)
                 UIHwpView()
@@ -10,7 +10,7 @@ struct ContentView: View {
                 NSHwpView(geometry: geometry)
                 #endif
             }
-        //}
+        // }
     }
 }
 
