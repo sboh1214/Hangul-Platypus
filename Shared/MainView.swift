@@ -6,10 +6,8 @@ struct MainView: View {
 
     var body: some View {
         NavigationView {
-            Group {
-                SidebarView()
-                ContentView()
-            }
+            SidebarView()
+            ContentView()
         }.sheet(isPresented: $showFileInfo) {
             #if os(macOS)
             FileInfoView(show: $showFileInfo)

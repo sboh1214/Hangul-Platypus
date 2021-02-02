@@ -8,27 +8,63 @@ struct NSHwpView: NSViewRepresentable {
     var geometry: GeometryProxy
 
     func makeNSView(context: Context) -> NSViewType {
-        var allString: String = ""
+        // context.environment.colorScheme == .light
 
-        let attribute = file.document.wrappedValue.hwp.docInfo.idMappings.charShapeArray
+        let allString = NSMutableAttributedString(string: "")
 
-        file.document.wrappedValue.hwp.sectionArray.forEach { section in
+        let hwp = file.document.wrappedValue.hwp
+
+        let attribute = hwp.docInfo.idMappings.charShapeArray
+
+        hwp.sectionArray.forEach { section in
             section.paragraph.forEach { paragraph in
-                let array = paragraph.paraText?.charArray.compactMap { char -> Character? in
-                    if char.type == .char {
-                        return Character(UnicodeScalar(char.value)!)
+                guard let charArray = paragraph.paraText?.charArray else {
+                    return
+                }
+
+                var index = 0
+                while true {
+                    let rangeCharArray: ArraySlice<HwpChar>
+                    if index == paragraph.paraCharShape.startingIndex.count - 1 {
+                        let startIndex = Int(paragraph.paraCharShape.startingIndex[index])
+                        rangeCharArray = charArray[startIndex..<charArray.endIndex]
                     } else {
-                        return nil
+                        let startIndex = Int(paragraph.paraCharShape.startingIndex[index])
+                        let endIndex = Int(paragraph.paraCharShape.startingIndex[index + 1])
+                        rangeCharArray = charArray[startIndex..<endIndex]
+                    }
+
+                    let characterArray = rangeCharArray.compactMap { char -> Character? in
+                        if char.type == .char {
+                            return Character(UnicodeScalar(char.value)!)
+                        } else {
+                            return Character(UnicodeScalar(UInt16(32))!) // Space
+                        }
+                    }
+
+                    let string = String(characterArray)
+                    let attributedString = NSMutableAttributedString(string: string)
+                    let range = (string as NSString).range(of: string)
+
+                    let attribute = hwp.docInfo.idMappings.charShapeArray[Int(paragraph.paraCharShape.shapeId[index])]
+
+                    if attribute.property.isBold {
+                        let font = NSFont.boldSystemFont(ofSize: 16)
+                        attributedString.addAttribute(.font, value: font, range: range)
+                    }
+
+                    allString.append(attributedString)
+
+                    if index < paragraph.paraCharShape.startingIndex.count - 1 {
+                        index += 1
+                    } else {
+                        break
                     }
                 }
-                let string = String(array ?? [Character]())
-                allString.append(string)
             }
         }
 
-        // context.environment.colorScheme == .light
-        let string = NSAttributedString(string: allString)
-        let textStorage = NSTextStorage(attributedString: string)
+        let textStorage = NSTextStorage(attributedString: allString)
         let layoutManager = NSLayoutManager()
         textStorage.addLayoutManager(layoutManager)
 
