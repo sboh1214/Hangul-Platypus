@@ -51,6 +51,8 @@
 		36D48DF125B6D9FB000434B4 /* GeneralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D48DEF25B6D9FB000434B4 /* GeneralView.swift */; };
 		36D48DF725B6DA30000434B4 /* AdvancedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D48DF625B6DA30000434B4 /* AdvancedView.swift */; };
 		36D48DF825B6DA30000434B4 /* AdvancedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D48DF625B6DA30000434B4 /* AdvancedView.swift */; };
+		36F756F625C9C34800CCD636 /* HwpColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F756F525C9C34800CCD636 /* HwpColor+Extension.swift */; };
+		36F756F725C9C34800CCD636 /* HwpColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F756F525C9C34800CCD636 /* HwpColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +121,7 @@
 		36D48DE825B6D9E1000434B4 /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
 		36D48DEF25B6D9FB000434B4 /* GeneralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralView.swift; sourceTree = "<group>"; };
 		36D48DF625B6DA30000434B4 /* AdvancedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedView.swift; sourceTree = "<group>"; };
+		36F756F525C9C34800CCD636 /* HwpColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HwpColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +240,7 @@
 			children = (
 				36BBC7DF25B857670045BF6B /* String+Extension.swift */,
 				3636F16325B898B400ECE0D8 /* UndoRedo.swift */,
+				36F756F525C9C34800CCD636 /* HwpColor+Extension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -502,6 +506,7 @@
 				3636F16425B898B400ECE0D8 /* UndoRedo.swift in Sources */,
 				3625A06425B6D35300C5C3FE /* LikeHangulDocument.swift in Sources */,
 				36D48DD525B6D8AD000434B4 /* UIHwpView.swift in Sources */,
+				36F756F625C9C34800CCD636 /* HwpColor+Extension.swift in Sources */,
 				369D184225B7B78B001C487E /* GeneralInfoView.swift in Sources */,
 				36D48DB025B6D7F7000434B4 /* SidebarView.swift in Sources */,
 				3625A06225B6D35300C5C3FE /* LikeHangulApp.swift in Sources */,
@@ -526,6 +531,7 @@
 				3636F16525B898B400ECE0D8 /* UndoRedo.swift in Sources */,
 				3625A06525B6D35300C5C3FE /* LikeHangulDocument.swift in Sources */,
 				36D48DDB25B6D8D1000434B4 /* NSHwpView.swift in Sources */,
+				36F756F725C9C34800CCD636 /* HwpColor+Extension.swift in Sources */,
 				369D184325B7B78B001C487E /* GeneralInfoView.swift in Sources */,
 				36D48DB125B6D7F7000434B4 /* SidebarView.swift in Sources */,
 				3625A06325B6D35300C5C3FE /* LikeHangulApp.swift in Sources */,
