@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		360ADF2925C9D094007799B7 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360ADF2825C9D094007799B7 /* Shared.swift */; };
+		360ADF2A25C9D094007799B7 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360ADF2825C9D094007799B7 /* Shared.swift */; };
 		3625A05525B6D35300C5C3FE /* LaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3625A05425B6D35300C5C3FE /* LaunchTests.swift */; };
 		3625A06025B6D35300C5C3FE /* LaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3625A05F25B6D35300C5C3FE /* LaunchTests.swift */; };
 		3625A06225B6D35300C5C3FE /* LikeHangulApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3625A03825B6D35300C5C3FE /* LikeHangulApp.swift */; };
@@ -87,6 +89,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		360ADF2825C9D094007799B7 /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
 		3625A03825B6D35300C5C3FE /* LikeHangulApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeHangulApp.swift; sourceTree = "<group>"; };
 		3625A03925B6D35300C5C3FE /* LikeHangulDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeHangulDocument.swift; sourceTree = "<group>"; };
 		3625A03A25B6D35300C5C3FE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -271,6 +274,7 @@
 				36D48DC925B6D869000434B4 /* ContentView.swift */,
 				36D48DD425B6D8AC000434B4 /* UIHwpView.swift */,
 				36D48DDA25B6D8D1000434B4 /* NSHwpView.swift */,
+				360ADF2825C9D094007799B7 /* Shared.swift */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -502,6 +506,7 @@
 				36D48DCA25B6D869000434B4 /* ContentView.swift in Sources */,
 				36D48DBB25B6D819000434B4 /* PageView.swift in Sources */,
 				36D48DE125B6D9B9000434B4 /* AboutView.swift in Sources */,
+				360ADF2925C9D094007799B7 /* Shared.swift in Sources */,
 				3636F15C25B8916300ECE0D8 /* SummaryView.swift in Sources */,
 				3636F16425B898B400ECE0D8 /* UndoRedo.swift in Sources */,
 				3625A06425B6D35300C5C3FE /* LikeHangulDocument.swift in Sources */,
@@ -527,6 +532,7 @@
 				36D48DCB25B6D869000434B4 /* ContentView.swift in Sources */,
 				36D48DBC25B6D819000434B4 /* PageView.swift in Sources */,
 				36D48DE225B6D9B9000434B4 /* AboutView.swift in Sources */,
+				360ADF2A25C9D094007799B7 /* Shared.swift in Sources */,
 				3636F15D25B8916300ECE0D8 /* SummaryView.swift in Sources */,
 				3636F16525B898B400ECE0D8 /* UndoRedo.swift in Sources */,
 				3625A06525B6D35300C5C3FE /* LikeHangulDocument.swift in Sources */,

@@ -1,10 +1,28 @@
 import SwiftUI
 
 struct UIHwpView: UIViewRepresentable {
-    typealias UIViewType = UIView
+    typealias UIViewType = UITextView
+
+    @EnvironmentObject var file: FileObject
+    var geometry: GeometryProxy
 
     func makeUIView(context: Context) -> UIViewType {
-        let view = UIView()
+        let hwp = file.document.wrappedValue.hwp
+
+        let textStorage = NSTextStorage(attributedString: makeStringForStorage(from: hwp))
+        let layoutManager = NSLayoutManager()
+        textStorage.addLayoutManager(layoutManager)
+
+        let containerSize = CGSize(width: geometry.size.width, height: .greatestFiniteMagnitude)
+        let container = NSTextContainer(size: containerSize)
+        container.widthTracksTextView = true
+        layoutManager.addTextContainer(container)
+        textStorage.addLayoutManager(layoutManager)
+
+        let view = UITextView(frame: geometry.frame(in: .local), textContainer: container)
+        view.isEditable = false
+        view.isSelectable = true
+
         return view
     }
 
@@ -15,6 +33,8 @@ struct UIHwpView: UIViewRepresentable {
 
 struct UIHwpViewPreviews: PreviewProvider {
     static var previews: some View {
-        UIHwpView()
+        GeometryReader { geometry in
+            UIHwpView(geometry: geometry)
+        }
     }
 }

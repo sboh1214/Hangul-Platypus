@@ -6,7 +6,9 @@ struct MainView: View {
 
     var body: some View {
         NavigationView {
+            #if os(macOS)
             SidebarView()
+            #endif
             ContentView()
         }.sheet(isPresented: $showFileInfo) {
             #if os(macOS)

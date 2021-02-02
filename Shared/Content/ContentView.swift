@@ -5,7 +5,7 @@ struct ContentView: View {
         // ScrollView([.horizontal, .vertical]) {
             GeometryReader { geometry in
                 #if os(iOS)
-                UIHwpView()
+                UIHwpView(geometry: geometry)
                 #elseif os(macOS)
                 NSHwpView(geometry: geometry)
                 #endif
