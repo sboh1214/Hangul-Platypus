@@ -1,10 +1,12 @@
 import SwiftUI
 
-class FileInfoObject: ObservableObject {
+class FileObject: ObservableObject {
+    @Published var document: Binding<LikeHangulDocument>
     @Published var fileURL: URL?
     @Published var isEditable: Bool
 
-    init(fileURL: URL?, isEditable: Bool) {
+    init(document: Binding<LikeHangulDocument>, fileURL: URL?, isEditable: Bool) {
+        self.document = document
         self.fileURL = fileURL
         self.isEditable = isEditable
     }
@@ -29,9 +31,9 @@ struct LikeHangulApp: App {
         let theme = appTheme == .system ? colorScheme : (appTheme == .light ? ColorScheme.light : ColorScheme.dark )
 
         DocumentGroup(newDocument: LikeHangulDocument()) { file in
-            MainView(document: file.$document)
-                .environmentObject(FileInfoObject(fileURL: file.fileURL, isEditable: file.isEditable))
-                .environment(\.colorScheme, theme)
+            MainView()
+                .environmentObject(FileObject(document: file.$document, fileURL: file.fileURL, isEditable: file.isEditable))
+                .colorScheme(theme)
         }
         .commands {
             ToolbarCommands()
@@ -50,6 +52,7 @@ struct LikeHangulApp: App {
         Settings {
             PreferencesView()
                 .padding(20)
+                .colorScheme(theme)
                 .frame(width: 375, height: 150)
         }
         #endif

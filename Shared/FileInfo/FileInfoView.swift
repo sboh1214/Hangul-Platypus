@@ -3,7 +3,6 @@ import CoreHwp
 
 struct FileInfoView: View {
     @Binding var show: Bool
-    @Binding var document: LikeHangulDocument
 
     @State private var tabSelection = Tabs.general
 
@@ -35,6 +34,6 @@ struct FileInfoView: View {
 
 struct FileInfoViewPreviews: PreviewProvider {
     static var previews: some View {
-        FileInfoView(show: .constant(true), document: .constant(LikeHangulDocument()))
+        FileInfoView(show: .constant(true))
     }
 }

@@ -2,13 +2,15 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ScrollView {
-            #if os(iOS)
-            UIHwpView()
-            #elseif os(macOS)
-            NSHwpView()
-            #endif
-        }
+        // ScrollView([.horizontal, .vertical]) {
+            GeometryReader { geometry in
+                #if os(iOS)
+                UIHwpView()
+                #elseif os(macOS)
+                NSHwpView(geometry: geometry)
+                #endif
+            }
+        // }
     }
 }
 

@@ -1,22 +1,19 @@
 import SwiftUI
 
 struct MainView: View {
-    @Binding var document: LikeHangulDocument
 
     @State private var showFileInfo = false
 
     var body: some View {
         NavigationView {
-            Group {
-                SidebarView()
-                ContentView()
-            }
+            SidebarView()
+            ContentView()
         }.sheet(isPresented: $showFileInfo) {
             #if os(macOS)
-            FileInfoView(show: $showFileInfo, document: $document)
+            FileInfoView(show: $showFileInfo)
                 .padding()
             #else
-            FileInfoView(show: $showFileInfo, document: $document)
+            FileInfoView(show: $showFileInfo)
             #endif
         }.toolbar {
             #if os(macOS)
@@ -43,6 +40,6 @@ func toggleSidebar() {
 
 struct MainViewPreviews: PreviewProvider {
     static var previews: some View {
-        MainView(document: .constant(LikeHangulDocument()))
+        MainView()
     }
 }
