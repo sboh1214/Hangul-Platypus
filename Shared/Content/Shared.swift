@@ -44,7 +44,7 @@ func makeFont(from attribute: HwpCharShape) -> UIFont? {
 
     let size = CGFloat(attribute.baseSize) * CGFloat(attribute.faceRelativeSize[0]) / CGFloat(10000)
 
-    let font = UIFont.systemFont(ofSize: size)
+    let font = UIFont(name: "HCR Batang", size: size)
     return font
 }
 #elseif os(macOS)

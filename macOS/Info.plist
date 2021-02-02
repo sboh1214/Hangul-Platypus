@@ -39,6 +39,8 @@
 	<string>public.app-category.productivity</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
+	<key>LSHasLocalizedDisplayName</key>
+	<true/>
 	<key>UTImportedTypeDeclarations</key>
 	<array>
 		<dict>
@@ -61,7 +63,7 @@
 			</dict>
 		</dict>
 	</array>
-	<key>LSHasLocalizedDisplayName</key>
-	<true/>
+	<key>ATSApplicationFontsPath</key>
+	<string>.</string>
 </dict>
 </plist>
