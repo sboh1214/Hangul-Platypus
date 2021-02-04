@@ -21,8 +21,9 @@
 		3625A06925B6D35300C5C3FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3625A03B25B6D35300C5C3FE /* Assets.xcassets */; };
 		3636F15C25B8916300ECE0D8 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3636F15B25B8916300ECE0D8 /* SummaryView.swift */; };
 		3636F15D25B8916300ECE0D8 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3636F15B25B8916300ECE0D8 /* SummaryView.swift */; };
-		3636F16425B898B400ECE0D8 /* UndoRedo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3636F16325B898B400ECE0D8 /* UndoRedo.swift */; };
-		3636F16525B898B400ECE0D8 /* UndoRedo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3636F16325B898B400ECE0D8 /* UndoRedo.swift */; };
+		366394D725CC02300035EA1A /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366394D625CC02300035EA1A /* Dictionary+Extension.swift */; };
+		366394D825CC02300035EA1A /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366394D625CC02300035EA1A /* Dictionary+Extension.swift */; };
+		366394E625CC9F2D0035EA1A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 366394E525CC9F2D0035EA1A /* SnapKit */; };
 		3683739D25B7BE2200401C48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3683739F25B7BE2200401C48 /* InfoPlist.strings */; };
 		368373BD25B7C00100401C48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3683739F25B7BE2200401C48 /* InfoPlist.strings */; };
 		369D184225B7B78B001C487E /* GeneralInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369D184125B7B78B001C487E /* GeneralInfoView.swift */; };
@@ -114,7 +115,7 @@
 		3625A05F25B6D35300C5C3FE /* LaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTests.swift; sourceTree = "<group>"; };
 		3625A06125B6D35300C5C3FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3636F15B25B8916300ECE0D8 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
-		3636F16325B898B400ECE0D8 /* UndoRedo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndoRedo.swift; sourceTree = "<group>"; };
+		366394D625CC02300035EA1A /* Dictionary+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
 		3683739E25B7BE2200401C48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		368373A025B7BE2500401C48 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		369D184125B7B78B001C487E /* GeneralInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralInfoView.swift; sourceTree = "<group>"; };
@@ -153,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36D48D8125B6D577000434B4 /* CoreHwp in Frameworks */,
+				366394E625CC9F2D0035EA1A /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +184,7 @@
 				3625A05325B6D35300C5C3FE /* Tests iOS */,
 				3625A05E25B6D35300C5C3FE /* Tests macOS */,
 				3625A04125B6D35300C5C3FE /* Products */,
+				366394E425CC9F2D0035EA1A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -255,10 +258,17 @@
 			isa = PBXGroup;
 			children = (
 				36BBC7DF25B857670045BF6B /* String+Extension.swift */,
-				3636F16325B898B400ECE0D8 /* UndoRedo.swift */,
 				36F756F525C9C34800CCD636 /* HwpColor+Extension.swift */,
+				366394D625CC02300035EA1A /* Dictionary+Extension.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		366394E425CC9F2D0035EA1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		36D48DA225B6D79A000434B4 /* FileInfo */ = {
@@ -353,6 +363,7 @@
 			name = "Like Hangul (macOS)";
 			packageProductDependencies = (
 				36D48D8025B6D577000434B4 /* CoreHwp */,
+				366394E525CC9F2D0035EA1A /* SnapKit */,
 			);
 			productName = "Like-Hangul (macOS)";
 			productReference = 3625A04825B6D35300C5C3FE /* Like Hangul.app */;
@@ -433,6 +444,7 @@
 			mainGroup = 3625A03225B6D35200C5C3FE;
 			packageReferences = (
 				36D48D7825B6D56F000434B4 /* XCRemoteSwiftPackageReference "Hwp-Swift" */,
+				366394DD25CC9F1D0035EA1A /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 3625A04125B6D35300C5C3FE /* Products */;
 			projectDirPath = "";
@@ -533,6 +545,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				366394D725CC02300035EA1A /* Dictionary+Extension.swift in Sources */,
 				36D48DA425B6D7A9000434B4 /* FileInfoView.swift in Sources */,
 				36D48DC225B6D843000434B4 /* TOCView.swift in Sources */,
 				36D48DCA25B6D869000434B4 /* ContentView.swift in Sources */,
@@ -540,7 +553,6 @@
 				36D48DE125B6D9B9000434B4 /* AboutView.swift in Sources */,
 				360ADF2925C9D094007799B7 /* Shared.swift in Sources */,
 				3636F15C25B8916300ECE0D8 /* SummaryView.swift in Sources */,
-				3636F16425B898B400ECE0D8 /* UndoRedo.swift in Sources */,
 				3625A06425B6D35300C5C3FE /* LikeHangulDocument.swift in Sources */,
 				36D48DD525B6D8AD000434B4 /* UIHwpView.swift in Sources */,
 				36F756F625C9C34800CCD636 /* HwpColor+Extension.swift in Sources */,
@@ -559,6 +571,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				366394D825CC02300035EA1A /* Dictionary+Extension.swift in Sources */,
 				36D48DA525B6D7A9000434B4 /* FileInfoView.swift in Sources */,
 				36D48DC325B6D843000434B4 /* TOCView.swift in Sources */,
 				36D48DCB25B6D869000434B4 /* ContentView.swift in Sources */,
@@ -566,7 +579,6 @@
 				36D48DE225B6D9B9000434B4 /* AboutView.swift in Sources */,
 				360ADF2A25C9D094007799B7 /* Shared.swift in Sources */,
 				3636F15D25B8916300ECE0D8 /* SummaryView.swift in Sources */,
-				3636F16525B898B400ECE0D8 /* UndoRedo.swift in Sources */,
 				3625A06525B6D35300C5C3FE /* LikeHangulDocument.swift in Sources */,
 				36D48DDB25B6D8D1000434B4 /* NSHwpView.swift in Sources */,
 				36F756F725C9C34800CCD636 /* HwpColor+Extension.swift in Sources */,
@@ -1002,6 +1014,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		366394DD25CC9F1D0035EA1A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = exactVersion;
+				version = 5.0.1;
+			};
+		};
 		36D48D7825B6D56F000434B4 /* XCRemoteSwiftPackageReference "Hwp-Swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sboh1214/Hwp-Swift.git";
@@ -1013,6 +1033,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		366394E525CC9F2D0035EA1A /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 366394DD25CC9F1D0035EA1A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
 		36D48D7925B6D56F000434B4 /* CoreHwp */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 36D48D7825B6D56F000434B4 /* XCRemoteSwiftPackageReference "Hwp-Swift" */;

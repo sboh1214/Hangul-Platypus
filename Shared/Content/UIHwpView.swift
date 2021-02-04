@@ -22,6 +22,11 @@ struct UIHwpView: UIViewRepresentable {
         let view = UITextView(frame: geometry.frame(in: .local), textContainer: container)
         view.isEditable = false
         view.isSelectable = true
+        view.isScrollEnabled = true
+        view.showsVerticalScrollIndicator = true
+        view.showsHorizontalScrollIndicator = true
+        view.maximumZoomScale = 3
+        view.minimumZoomScale = 0.5
 
         return view
     }
