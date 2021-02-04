@@ -85,5 +85,12 @@
 			</dict>
 		</dict>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>HANBatang.ttf</string>
+		<string>HANBatangB.ttf</string>
+		<string>HANDotum.ttf</string>
+		<string>HANDotumB.ttf</string>
+	</array>
 </dict>
 </plist>

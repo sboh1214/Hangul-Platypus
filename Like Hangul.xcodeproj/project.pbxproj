@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		360ADF2925C9D094007799B7 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360ADF2825C9D094007799B7 /* Shared.swift */; };
+		360ADF2A25C9D094007799B7 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360ADF2825C9D094007799B7 /* Shared.swift */; };
 		3625A05525B6D35300C5C3FE /* LaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3625A05425B6D35300C5C3FE /* LaunchTests.swift */; };
 		3625A06025B6D35300C5C3FE /* LaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3625A05F25B6D35300C5C3FE /* LaunchTests.swift */; };
 		3625A06225B6D35300C5C3FE /* LikeHangulApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3625A03825B6D35300C5C3FE /* LikeHangulApp.swift */; };
@@ -51,6 +53,14 @@
 		36D48DF125B6D9FB000434B4 /* GeneralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D48DEF25B6D9FB000434B4 /* GeneralView.swift */; };
 		36D48DF725B6DA30000434B4 /* AdvancedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D48DF625B6DA30000434B4 /* AdvancedView.swift */; };
 		36D48DF825B6DA30000434B4 /* AdvancedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D48DF625B6DA30000434B4 /* AdvancedView.swift */; };
+		36F71B8E25C9DA1400CC7754 /* HANBatang.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36F71B8D25C9DA1400CC7754 /* HANBatang.ttf */; };
+		36F71B8F25C9DA1400CC7754 /* HANBatang.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36F71B8D25C9DA1400CC7754 /* HANBatang.ttf */; };
+		36F71B9525C9DA1F00CC7754 /* HANBatangB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36F71B9425C9DA1F00CC7754 /* HANBatangB.ttf */; };
+		36F71B9625C9DA1F00CC7754 /* HANBatangB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36F71B9425C9DA1F00CC7754 /* HANBatangB.ttf */; };
+		36F71B9C25C9DA2800CC7754 /* HANDotum.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36F71B9B25C9DA2800CC7754 /* HANDotum.ttf */; };
+		36F71B9D25C9DA2800CC7754 /* HANDotum.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36F71B9B25C9DA2800CC7754 /* HANDotum.ttf */; };
+		36F71BA325C9DA3600CC7754 /* HANDotumB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36F71BA225C9DA3600CC7754 /* HANDotumB.ttf */; };
+		36F71BA425C9DA3600CC7754 /* HANDotumB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36F71BA225C9DA3600CC7754 /* HANDotumB.ttf */; };
 		36F756F625C9C34800CCD636 /* HwpColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F756F525C9C34800CCD636 /* HwpColor+Extension.swift */; };
 		36F756F725C9C34800CCD636 /* HwpColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F756F525C9C34800CCD636 /* HwpColor+Extension.swift */; };
 /* End PBXBuildFile section */
@@ -87,6 +97,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		360ADF2825C9D094007799B7 /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
 		3625A03825B6D35300C5C3FE /* LikeHangulApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeHangulApp.swift; sourceTree = "<group>"; };
 		3625A03925B6D35300C5C3FE /* LikeHangulDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeHangulDocument.swift; sourceTree = "<group>"; };
 		3625A03A25B6D35300C5C3FE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -121,6 +132,10 @@
 		36D48DE825B6D9E1000434B4 /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
 		36D48DEF25B6D9FB000434B4 /* GeneralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralView.swift; sourceTree = "<group>"; };
 		36D48DF625B6DA30000434B4 /* AdvancedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedView.swift; sourceTree = "<group>"; };
+		36F71B8D25C9DA1400CC7754 /* HANBatang.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HANBatang.ttf; sourceTree = "<group>"; };
+		36F71B9425C9DA1F00CC7754 /* HANBatangB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HANBatangB.ttf; sourceTree = "<group>"; };
+		36F71B9B25C9DA2800CC7754 /* HANDotum.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HANDotum.ttf; sourceTree = "<group>"; };
+		36F71BA225C9DA3600CC7754 /* HANDotumB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HANDotumB.ttf; sourceTree = "<group>"; };
 		36F756F525C9C34800CCD636 /* HwpColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HwpColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -173,6 +188,7 @@
 		3625A03725B6D35300C5C3FE /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				36F71B8C25C9D9C300CC7754 /* Fonts */,
 				3636F16225B8989E00ECE0D8 /* Utils */,
 				3683739F25B7BE2200401C48 /* InfoPlist.strings */,
 				36D48DE725B6D9D8000434B4 /* Preferences */,
@@ -271,6 +287,7 @@
 				36D48DC925B6D869000434B4 /* ContentView.swift */,
 				36D48DD425B6D8AC000434B4 /* UIHwpView.swift */,
 				36D48DDA25B6D8D1000434B4 /* NSHwpView.swift */,
+				360ADF2825C9D094007799B7 /* Shared.swift */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -283,6 +300,17 @@
 				36D48DF625B6DA30000434B4 /* AdvancedView.swift */,
 			);
 			path = Preferences;
+			sourceTree = "<group>";
+		};
+		36F71B8C25C9D9C300CC7754 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				36F71B8D25C9DA1400CC7754 /* HANBatang.ttf */,
+				36F71B9425C9DA1F00CC7754 /* HANBatangB.ttf */,
+				36F71B9B25C9DA2800CC7754 /* HANDotum.ttf */,
+				36F71BA225C9DA3600CC7754 /* HANDotumB.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -424,8 +452,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3625A06825B6D35300C5C3FE /* Assets.xcassets in Resources */,
+				36F71B8E25C9DA1400CC7754 /* HANBatang.ttf in Resources */,
 				36BBC7D625B857310045BF6B /* Localizable.strings in Resources */,
+				36F71BA325C9DA3600CC7754 /* HANDotumB.ttf in Resources */,
 				3683739D25B7BE2200401C48 /* InfoPlist.strings in Resources */,
+				36F71B9C25C9DA2800CC7754 /* HANDotum.ttf in Resources */,
+				36F71B9525C9DA1F00CC7754 /* HANBatangB.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,8 +466,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3625A06925B6D35300C5C3FE /* Assets.xcassets in Resources */,
+				36F71B8F25C9DA1400CC7754 /* HANBatang.ttf in Resources */,
 				36BBC7D725B857310045BF6B /* Localizable.strings in Resources */,
+				36F71BA425C9DA3600CC7754 /* HANDotumB.ttf in Resources */,
 				368373BD25B7C00100401C48 /* InfoPlist.strings in Resources */,
+				36F71B9D25C9DA2800CC7754 /* HANDotum.ttf in Resources */,
+				36F71B9625C9DA1F00CC7754 /* HANBatangB.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +538,7 @@
 				36D48DCA25B6D869000434B4 /* ContentView.swift in Sources */,
 				36D48DBB25B6D819000434B4 /* PageView.swift in Sources */,
 				36D48DE125B6D9B9000434B4 /* AboutView.swift in Sources */,
+				360ADF2925C9D094007799B7 /* Shared.swift in Sources */,
 				3636F15C25B8916300ECE0D8 /* SummaryView.swift in Sources */,
 				3636F16425B898B400ECE0D8 /* UndoRedo.swift in Sources */,
 				3625A06425B6D35300C5C3FE /* LikeHangulDocument.swift in Sources */,
@@ -527,6 +564,7 @@
 				36D48DCB25B6D869000434B4 /* ContentView.swift in Sources */,
 				36D48DBC25B6D819000434B4 /* PageView.swift in Sources */,
 				36D48DE225B6D9B9000434B4 /* AboutView.swift in Sources */,
+				360ADF2A25C9D094007799B7 /* Shared.swift in Sources */,
 				3636F15D25B8916300ECE0D8 /* SummaryView.swift in Sources */,
 				3636F16525B898B400ECE0D8 /* UndoRedo.swift in Sources */,
 				3625A06525B6D35300C5C3FE /* LikeHangulDocument.swift in Sources */,
