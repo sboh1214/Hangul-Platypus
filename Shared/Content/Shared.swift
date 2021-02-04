@@ -70,7 +70,7 @@ func makeFont(from attribute: HwpCharShape) -> UIFont {
     return UIFont(descriptor: modifiedDescriptor, size: 0)
 }
 #elseif os(macOS)
-func makeFont(from attribute: HwpCharShape) -> NSFont? {
+func makeFont(from attribute: HwpCharShape) -> NSFont {
     let family = "HCR Batang"
 
     let traits: NSFontTraitMask
@@ -169,18 +169,22 @@ func makeAttributes(from charShape: HwpCharShape) -> [NSAttributedString.Key: An
         .foregroundColor: charShape.faceColor.uiColor,
         .strokeColor: charShape.faceColor.uiColor,
         .backgroundColor: charShape.shadeColor.uiColor,
-        .underlineColor: charShape.underlineColor.uiColor,
-        .strikethroughColor: charShape.strikethroughColor?.uiColor
+        .underlineColor: charShape.underlineColor.uiColor
     ]
+    if let color = charShape.strikethroughColor {
+        attributes.updateValue(color.uiColor, forKey: .strikethroughColor)
+    }
     #elseif os(macOS)
     var attributes: [NSAttributedString.Key: Any] = [
         .foregroundColor: charShape.faceColor.nsColor,
         .strokeColor: charShape.faceColor.nsColor,
         .backgroundColor: charShape.shadeColor.nsColor,
         .underlineColor: charShape.underlineColor.nsColor,
-        .strikethroughColor: charShape.strikethroughColor?.nsColor,
         .superscript: makeSuperscript(from: charShape.property)
     ]
+    if let color = charShape.strikethroughColor {
+        attributes.updateValue(color.nsColor, forKey: .strikethroughColor)
+    }
     #endif
 
     let sharedAttributes: [NSAttributedString.Key: Any] = [
