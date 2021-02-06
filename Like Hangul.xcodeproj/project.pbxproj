@@ -23,7 +23,6 @@
 		3636F15D25B8916300ECE0D8 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3636F15B25B8916300ECE0D8 /* SummaryView.swift */; };
 		366394D725CC02300035EA1A /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366394D625CC02300035EA1A /* Dictionary+Extension.swift */; };
 		366394D825CC02300035EA1A /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366394D625CC02300035EA1A /* Dictionary+Extension.swift */; };
-		366394E625CC9F2D0035EA1A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 366394E525CC9F2D0035EA1A /* SnapKit */; };
 		3683739D25B7BE2200401C48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3683739F25B7BE2200401C48 /* InfoPlist.strings */; };
 		368373BD25B7C00100401C48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3683739F25B7BE2200401C48 /* InfoPlist.strings */; };
 		369D184225B7B78B001C487E /* GeneralInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369D184125B7B78B001C487E /* GeneralInfoView.swift */; };
@@ -54,6 +53,8 @@
 		36D48DF125B6D9FB000434B4 /* GeneralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D48DEF25B6D9FB000434B4 /* GeneralView.swift */; };
 		36D48DF725B6DA30000434B4 /* AdvancedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D48DF625B6DA30000434B4 /* AdvancedView.swift */; };
 		36D48DF825B6DA30000434B4 /* AdvancedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D48DF625B6DA30000434B4 /* AdvancedView.swift */; };
+		36E024E125CED0C600047375 /* TextViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E024E025CED0C600047375 /* TextViewManager.swift */; };
+		36E024E225CED0C600047375 /* TextViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E024E025CED0C600047375 /* TextViewManager.swift */; };
 		36F71B8E25C9DA1400CC7754 /* HANBatang.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36F71B8D25C9DA1400CC7754 /* HANBatang.ttf */; };
 		36F71B8F25C9DA1400CC7754 /* HANBatang.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36F71B8D25C9DA1400CC7754 /* HANBatang.ttf */; };
 		36F71B9525C9DA1F00CC7754 /* HANBatangB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36F71B9425C9DA1F00CC7754 /* HANBatangB.ttf */; };
@@ -133,6 +134,7 @@
 		36D48DE825B6D9E1000434B4 /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
 		36D48DEF25B6D9FB000434B4 /* GeneralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralView.swift; sourceTree = "<group>"; };
 		36D48DF625B6DA30000434B4 /* AdvancedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedView.swift; sourceTree = "<group>"; };
+		36E024E025CED0C600047375 /* TextViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewManager.swift; sourceTree = "<group>"; };
 		36F71B8D25C9DA1400CC7754 /* HANBatang.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HANBatang.ttf; sourceTree = "<group>"; };
 		36F71B9425C9DA1F00CC7754 /* HANBatangB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HANBatangB.ttf; sourceTree = "<group>"; };
 		36F71B9B25C9DA2800CC7754 /* HANDotum.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HANDotum.ttf; sourceTree = "<group>"; };
@@ -154,7 +156,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				36D48D8125B6D577000434B4 /* CoreHwp in Frameworks */,
-				366394E625CC9F2D0035EA1A /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,10 +295,10 @@
 		36D48DC825B6D85A000434B4 /* Content */ = {
 			isa = PBXGroup;
 			children = (
+				36E024DF25CED0A600047375 /* Shared */,
 				36D48DC925B6D869000434B4 /* ContentView.swift */,
 				36D48DD425B6D8AC000434B4 /* UIHwpView.swift */,
 				36D48DDA25B6D8D1000434B4 /* NSHwpView.swift */,
-				360ADF2825C9D094007799B7 /* Shared.swift */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -310,6 +311,15 @@
 				36D48DF625B6DA30000434B4 /* AdvancedView.swift */,
 			);
 			path = Preferences;
+			sourceTree = "<group>";
+		};
+		36E024DF25CED0A600047375 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				360ADF2825C9D094007799B7 /* Shared.swift */,
+				36E024E025CED0C600047375 /* TextViewManager.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		36F71B8C25C9D9C300CC7754 /* Fonts */ = {
@@ -363,7 +373,6 @@
 			name = "Like Hangul (macOS)";
 			packageProductDependencies = (
 				36D48D8025B6D577000434B4 /* CoreHwp */,
-				366394E525CC9F2D0035EA1A /* SnapKit */,
 			);
 			productName = "Like-Hangul (macOS)";
 			productReference = 3625A04825B6D35300C5C3FE /* Like Hangul.app */;
@@ -444,7 +453,6 @@
 			mainGroup = 3625A03225B6D35200C5C3FE;
 			packageReferences = (
 				36D48D7825B6D56F000434B4 /* XCRemoteSwiftPackageReference "Hwp-Swift" */,
-				366394DD25CC9F1D0035EA1A /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 3625A04125B6D35300C5C3FE /* Products */;
 			projectDirPath = "";
@@ -560,6 +568,7 @@
 				36D48DB025B6D7F7000434B4 /* SidebarView.swift in Sources */,
 				3625A06225B6D35300C5C3FE /* LikeHangulApp.swift in Sources */,
 				36D48DF025B6D9FB000434B4 /* GeneralView.swift in Sources */,
+				36E024E125CED0C600047375 /* TextViewManager.swift in Sources */,
 				36D48DF725B6DA30000434B4 /* AdvancedView.swift in Sources */,
 				3625A06625B6D35300C5C3FE /* MainView.swift in Sources */,
 				36BBC7E025B857670045BF6B /* String+Extension.swift in Sources */,
@@ -586,6 +595,7 @@
 				36D48DB125B6D7F7000434B4 /* SidebarView.swift in Sources */,
 				3625A06325B6D35300C5C3FE /* LikeHangulApp.swift in Sources */,
 				36D48DF125B6D9FB000434B4 /* GeneralView.swift in Sources */,
+				36E024E225CED0C600047375 /* TextViewManager.swift in Sources */,
 				36D48DF825B6DA30000434B4 /* AdvancedView.swift in Sources */,
 				3625A06725B6D35300C5C3FE /* MainView.swift in Sources */,
 				36BBC7E125B857670045BF6B /* String+Extension.swift in Sources */,
@@ -1014,14 +1024,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		366394DD25CC9F1D0035EA1A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit";
-			requirement = {
-				kind = exactVersion;
-				version = 5.0.1;
-			};
-		};
 		36D48D7825B6D56F000434B4 /* XCRemoteSwiftPackageReference "Hwp-Swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sboh1214/Hwp-Swift.git";
@@ -1033,11 +1035,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		366394E525CC9F2D0035EA1A /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 366394DD25CC9F1D0035EA1A /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
 		36D48D7925B6D56F000434B4 /* CoreHwp */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 36D48D7825B6D56F000434B4 /* XCRemoteSwiftPackageReference "Hwp-Swift" */;
