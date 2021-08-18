@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/sboh1214/Hwp-Swift.git",
         "state": {
           "branch": null,
-          "revision": "b2bde1d31a0496d380fe4f628bc1783d96526aa7",
-          "version": "0.12.0"
+          "revision": "64482d3c8f2dcf3762ddb4405fc606bf81b9b579",
+          "version": "0.14.1"
         }
       },
       {
@@ -33,8 +33,8 @@
         "repositoryURL": "https://github.com/tsolomko/SWCompression.git",
         "state": {
           "branch": null,
-          "revision": "4fa4adcf5bbf263388edcbf2631987039a84b389",
-          "version": "4.5.7"
+          "revision": "48ecebcadeecb81a41d66af547a5d7fcc1d8d5cb",
+          "version": "4.5.8"
         }
       }
     ]
