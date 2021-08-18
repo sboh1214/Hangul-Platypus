@@ -63,8 +63,6 @@
 		36F71B9D25C9DA2800CC7754 /* HANDotum.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36F71B9B25C9DA2800CC7754 /* HANDotum.ttf */; };
 		36F71BA325C9DA3600CC7754 /* HANDotumB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36F71BA225C9DA3600CC7754 /* HANDotumB.ttf */; };
 		36F71BA425C9DA3600CC7754 /* HANDotumB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36F71BA225C9DA3600CC7754 /* HANDotumB.ttf */; };
-		36F756F625C9C34800CCD636 /* HwpColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F756F525C9C34800CCD636 /* HwpColor+Extension.swift */; };
-		36F756F725C9C34800CCD636 /* HwpColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F756F525C9C34800CCD636 /* HwpColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,7 +137,6 @@
 		36F71B9425C9DA1F00CC7754 /* HANBatangB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HANBatangB.ttf; sourceTree = "<group>"; };
 		36F71B9B25C9DA2800CC7754 /* HANDotum.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HANDotum.ttf; sourceTree = "<group>"; };
 		36F71BA225C9DA3600CC7754 /* HANDotumB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HANDotumB.ttf; sourceTree = "<group>"; };
-		36F756F525C9C34800CCD636 /* HwpColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HwpColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,7 +256,6 @@
 			isa = PBXGroup;
 			children = (
 				36BBC7DF25B857670045BF6B /* String+Extension.swift */,
-				36F756F525C9C34800CCD636 /* HwpColor+Extension.swift */,
 				366394D625CC02300035EA1A /* Dictionary+Extension.swift */,
 			);
 			path = Utils;
@@ -563,7 +559,6 @@
 				3636F15C25B8916300ECE0D8 /* SummaryView.swift in Sources */,
 				3625A06425B6D35300C5C3FE /* LikeHangulDocument.swift in Sources */,
 				36D48DD525B6D8AD000434B4 /* UIHwpView.swift in Sources */,
-				36F756F625C9C34800CCD636 /* HwpColor+Extension.swift in Sources */,
 				369D184225B7B78B001C487E /* GeneralInfoView.swift in Sources */,
 				36D48DB025B6D7F7000434B4 /* SidebarView.swift in Sources */,
 				3625A06225B6D35300C5C3FE /* LikeHangulApp.swift in Sources */,
@@ -590,7 +585,6 @@
 				3636F15D25B8916300ECE0D8 /* SummaryView.swift in Sources */,
 				3625A06525B6D35300C5C3FE /* LikeHangulDocument.swift in Sources */,
 				36D48DDB25B6D8D1000434B4 /* NSHwpView.swift in Sources */,
-				36F756F725C9C34800CCD636 /* HwpColor+Extension.swift in Sources */,
 				369D184325B7B78B001C487E /* GeneralInfoView.swift in Sources */,
 				36D48DB125B6D7F7000434B4 /* SidebarView.swift in Sources */,
 				3625A06325B6D35300C5C3FE /* LikeHangulApp.swift in Sources */,
@@ -1029,7 +1023,7 @@
 			repositoryURL = "https://github.com/sboh1214/Hwp-Swift.git";
 			requirement = {
 				kind = exactVersion;
-				version = 0.12.0;
+				version = 0.14.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
