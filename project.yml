@@ -8,11 +8,16 @@ options:
   preGenCommand: mv Hangul\ Platypus.xcodeproj/xcshareddata/xcschemes/ .
   postGenCommand: mv xcschemes/ Hangul\ Platypus.xcodeproj/xcshareddata/
 
+settings:
+  PRODUCT_BUNDLE_IDENTIFIER: dev.sboh.hangul-editor
+  MARKETING_VERSION: "0.1.0"
+  CURRENT_PROJECT_VERSION: 2
+
 targets:
   Hangul Platypus (iOS):
     type: application
     platform: iOS
-    sources: [Shared, iOS]    
+    sources: [Shared, iOS]
     dependencies:
       - package: CoreHwp
     info:
@@ -69,7 +74,7 @@ targets:
   Hangul Platypus (macOS):
     type: application
     platform: macOS
-    sources: [Shared, macOS]    
+    sources: [Shared, macOS]   
     dependencies:
       - package: CoreHwp
     info:

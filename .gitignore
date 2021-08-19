@@ -6,6 +6,9 @@
 xcuserdata/
 
 ## Use xcodegen to create Xcode Project
+/iOS/Info.plist
+/macOS/Info.plist
+/macOS/entitlements
 ## Except shared schemes
 !*.xcodeproj/
 *.xcodeproj/*
