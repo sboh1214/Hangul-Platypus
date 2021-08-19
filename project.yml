@@ -12,6 +12,7 @@ settings:
   PRODUCT_BUNDLE_IDENTIFIER: dev.sboh.hangul-editor
   MARKETING_VERSION: "0.1.0"
   CURRENT_PROJECT_VERSION: 2
+  CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED: YES
 
 targets:
   Hangul Platypus (iOS):
@@ -74,7 +75,9 @@ targets:
   Hangul Platypus (macOS):
     type: application
     platform: macOS
-    sources: [Shared, macOS]   
+    sources: [Shared, macOS]
+    settings:
+      CODE_SIGN_IDENTITY: "-"
     dependencies:
       - package: CoreHwp
     info:
@@ -119,10 +122,12 @@ targets:
   Tests iOS:
     type: bundle.ui-testing
     platform: iOS
+    sources: [Tests iOS]
 
   Tests macOS:
     type: bundle.ui-testing
     platform: macOS
+    sources: [Tests macOS]
 
 packages:
   CoreHwp:
