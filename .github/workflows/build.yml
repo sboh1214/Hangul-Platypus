@@ -17,4 +17,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Release Build
-      run: xcodebuild -project Like\ Hangul.xcodeproj -scheme Like\ Hangul\ \(${{ matrix.platform }}\) -configuration Release | xcpretty
+      run: xcodebuild -project Like\ Hangul.xcodeproj -scheme Like\ Hangul\ \(${{ matrix.platform }}\) -configuration Release

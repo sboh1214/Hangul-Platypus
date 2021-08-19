@@ -17,4 +17,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Test
-      run: xcodebuild test -project Like\ Hangul.xcodeproj -scheme Tests\ ${{ matrix.platform }} -resultBundlePath HwpMac.xcresult | xcpretty
+      run: xcodebuild test -project Like\ Hangul.xcodeproj -scheme Tests\ ${{ matrix.platform }} -resultBundlePath HwpMac.xcresult
