@@ -1,0 +1,55 @@
+name: Hangul Platypus
+
+options:
+  deploymentTarget:
+    iOS: "14.0"
+    macOS: "11.0"
+  developmentLanguage: ko
+
+targets:
+  Hangul Platypus (iOS):
+    type: application
+    platform: iOS
+    sources: [Shared, iOS]    
+    dependencies:
+      - package: Hwp-Swift
+    preBuildScripts:
+      - script: |
+          if which swiftlint >/dev/null; then
+            swiftlint
+          else
+            echo "warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint"
+          fi
+  Hangul Platypus (macOS):
+    type: application
+    platform: macOS
+    sources: [Shared, macOS]    
+    dependencies:
+      - package: Hwp-Swift
+    entitlements:
+      path: macOS/macOS.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+        com.apple.security.files.user-selected.read-write: true
+    preBuildScripts:
+      - script: |
+          if which swiftlint >/dev/null; then
+            swiftlint
+          else
+            echo "warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint"
+          fi
+  
+  Test iOS:
+    type: bundle.ui-testing
+    platform: iOS
+    sources: [Test iOS]
+
+  Test macOS:
+    type: bundle.ui-testing
+    platform: macOS
+    sources: [Test macOS]
+
+packages:
+  Hwp-Swift:
+    url: https://github.com/sboh1214/Hwp-Swift.git
+    exact: 0.14.1

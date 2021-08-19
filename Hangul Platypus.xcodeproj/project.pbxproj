@@ -332,9 +332,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3625A03F25B6D35300C5C3FE /* Like Hangul (iOS) */ = {
+		3625A03F25B6D35300C5C3FE /* Hangul Platypus (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3625A06C25B6D35300C5C3FE /* Build configuration list for PBXNativeTarget "Like Hangul (iOS)" */;
+			buildConfigurationList = 3625A06C25B6D35300C5C3FE /* Build configuration list for PBXNativeTarget "Hangul Platypus (iOS)" */;
 			buildPhases = (
 				3646C91C25B7874B004FAD92 /* ShellScript */,
 				3625A03C25B6D35300C5C3FE /* Sources */,
@@ -345,7 +345,7 @@
 			);
 			dependencies = (
 			);
-			name = "Like Hangul (iOS)";
+			name = "Hangul Platypus (iOS)";
 			packageProductDependencies = (
 				36D48D7925B6D56F000434B4 /* CoreHwp */,
 			);
@@ -353,9 +353,9 @@
 			productReference = 3625A04025B6D35300C5C3FE /* Like Hangul.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3625A04725B6D35300C5C3FE /* Like Hangul (macOS) */ = {
+		3625A04725B6D35300C5C3FE /* Hangul Platypus (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3625A06F25B6D35300C5C3FE /* Build configuration list for PBXNativeTarget "Like Hangul (macOS)" */;
+			buildConfigurationList = 3625A06F25B6D35300C5C3FE /* Build configuration list for PBXNativeTarget "Hangul Platypus (macOS)" */;
 			buildPhases = (
 				3646C91D25B7877A004FAD92 /* ShellScript */,
 				3625A04425B6D35300C5C3FE /* Sources */,
@@ -366,7 +366,7 @@
 			);
 			dependencies = (
 			);
-			name = "Like Hangul (macOS)";
+			name = "Hangul Platypus (macOS)";
 			packageProductDependencies = (
 				36D48D8025B6D577000434B4 /* CoreHwp */,
 			);
@@ -437,7 +437,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3625A03625B6D35200C5C3FE /* Build configuration list for PBXProject "Like Hangul" */;
+			buildConfigurationList = 3625A03625B6D35200C5C3FE /* Build configuration list for PBXProject "Hangul Platypus" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -454,8 +454,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3625A03F25B6D35300C5C3FE /* Like Hangul (iOS) */,
-				3625A04725B6D35300C5C3FE /* Like Hangul (macOS) */,
+				3625A03F25B6D35300C5C3FE /* Hangul Platypus (iOS) */,
+				3625A04725B6D35300C5C3FE /* Hangul Platypus (macOS) */,
 				3625A04F25B6D35300C5C3FE /* Tests iOS */,
 				3625A05A25B6D35300C5C3FE /* Tests macOS */,
 			);
@@ -618,22 +618,22 @@
 /* Begin PBXTargetDependency section */
 		361090FB25B78CE60002F1C2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3625A03F25B6D35300C5C3FE /* Like Hangul (iOS) */;
+			target = 3625A03F25B6D35300C5C3FE /* Hangul Platypus (iOS) */;
 			targetProxy = 361090FA25B78CE60002F1C2 /* PBXContainerItemProxy */;
 		};
 		3610910125B78D210002F1C2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3625A04725B6D35300C5C3FE /* Like Hangul (macOS) */;
+			target = 3625A04725B6D35300C5C3FE /* Hangul Platypus (macOS) */;
 			targetProxy = 3610910025B78D210002F1C2 /* PBXContainerItemProxy */;
 		};
 		3625A05225B6D35300C5C3FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3625A03F25B6D35300C5C3FE /* Like Hangul (iOS) */;
+			target = 3625A03F25B6D35300C5C3FE /* Hangul Platypus (iOS) */;
 			targetProxy = 3625A05125B6D35300C5C3FE /* PBXContainerItemProxy */;
 		};
 		3625A05D25B6D35300C5C3FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3625A04725B6D35300C5C3FE /* Like Hangul (macOS) */;
+			target = 3625A04725B6D35300C5C3FE /* Hangul Platypus (macOS) */;
 			targetProxy = 3625A05C25B6D35300C5C3FE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -788,8 +788,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "dev.sboh.Like-Hangul";
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.sboh.hangul-editor";
 				PRODUCT_NAME = "Like Hangul";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -812,8 +812,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "dev.sboh.Like-Hangul";
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.sboh.hangul-editor";
 				PRODUCT_NAME = "Like Hangul";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -841,8 +841,8 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "dev.sboh.Like-Hangul";
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.sboh.hangul-editor";
 				PRODUCT_NAME = "Like Hangul";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
@@ -868,8 +868,8 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "dev.sboh.Like-Hangul";
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.sboh.hangul-editor";
 				PRODUCT_NAME = "Like Hangul";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
@@ -970,7 +970,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3625A03625B6D35200C5C3FE /* Build configuration list for PBXProject "Like Hangul" */ = {
+		3625A03625B6D35200C5C3FE /* Build configuration list for PBXProject "Hangul Platypus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3625A06A25B6D35300C5C3FE /* Debug */,
@@ -979,7 +979,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3625A06C25B6D35300C5C3FE /* Build configuration list for PBXNativeTarget "Like Hangul (iOS)" */ = {
+		3625A06C25B6D35300C5C3FE /* Build configuration list for PBXNativeTarget "Hangul Platypus (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3625A06D25B6D35300C5C3FE /* Debug */,
@@ -988,7 +988,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3625A06F25B6D35300C5C3FE /* Build configuration list for PBXNativeTarget "Like Hangul (macOS)" */ = {
+		3625A06F25B6D35300C5C3FE /* Build configuration list for PBXNativeTarget "Hangul Platypus (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3625A07025B6D35300C5C3FE /* Debug */,
