@@ -18,10 +18,10 @@
       <CodeCoverageTargets>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3625A04725B6D35300C5C3FE"
-            BuildableName = "Like Hangul.app"
-            BlueprintName = "Like Hangul (macOS)"
-            ReferencedContainer = "container:Like Hangul.xcodeproj">
+            BlueprintIdentifier = "93CC57129F2242AAD666FF3A"
+            BuildableName = "Hangul Platypus (macOS).app"
+            BlueprintName = "Hangul Platypus (macOS)"
+            ReferencedContainer = "container:Hangul Platypus.xcodeproj">
          </BuildableReference>
       </CodeCoverageTargets>
       <Testables>
@@ -29,10 +29,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3625A05A25B6D35300C5C3FE"
+               BlueprintIdentifier = "31B0C0BACCDE38B6694D7902"
                BuildableName = "Tests macOS.xctest"
                BlueprintName = "Tests macOS"
-               ReferencedContainer = "container:Like Hangul.xcodeproj">
+               ReferencedContainer = "container:Hangul Platypus.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>

@@ -5,6 +5,8 @@ options:
     iOS: "14.0"
     macOS: "11.0"
   developmentLanguage: ko
+  preGenCommand: mv Hangul\ Platypus.xcodeproj/xcshareddata/xcschemes/ .
+  postGenCommand: mv xcschemes/ Hangul\ Platypus.xcodeproj/xcshareddata/
 
 targets:
   Hangul Platypus (iOS):
@@ -12,7 +14,50 @@ targets:
     platform: iOS
     sources: [Shared, iOS]    
     dependencies:
-      - package: Hwp-Swift
+      - package: CoreHwp
+    info:
+      path: iOS/Info.plist
+      properties:
+        CFBundleDocumentTypes:
+          - CFBundleTypeName: HWP
+            LSHandlerRank: Alternate
+            LSItemContentTypes:
+            - kr.co.hancom.hwp
+        CFBundlePackageType: $(PRODUCT_BUNDLE_PACKAGE_TYPE)
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        CFBundleURLTypes: []
+        LSRequiresIPhoneOS: true # Disable macOS catalyst
+        LSSupportsOpeningDocumentsInPlace: true
+        UIAppFonts:
+          - HANBatang.ttf
+          - HANBatangB.ttf
+          - HANDotum.ttf
+          - HANDotumB.ttf
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: true # iPadOS multi windows
+        UIApplicationSupportsIndirectInputEvents: true # iPadOS mouse event
+        UILaunchScreen: {} # SwiftUI Default
+        UIRequiredDeviceCapabilities:
+          - armv7 # SwiftUI Default
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UISupportsDocumentBrowser: true
+        UTImportedTypeDeclarations:
+          - UTTypeConformsTo:
+              - public.data
+            UTTypeDescription: Hanword Document
+            UTTypeIdentifier: kr.co.hancom.hwp
+            UTTypeTagSpecification:
+              public.filename-extension:
+                - hwp
     preBuildScripts:
       - script: |
           if which swiftlint >/dev/null; then
@@ -20,12 +65,39 @@ targets:
           else
             echo "warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint"
           fi
+
   Hangul Platypus (macOS):
     type: application
     platform: macOS
     sources: [Shared, macOS]    
     dependencies:
-      - package: Hwp-Swift
+      - package: CoreHwp
+    info:
+      path: macOS/Info.plist
+      properties:
+        ATSApplicationFontsPath: "."
+        CFBundleDocumentTypes:
+          - CFBundleTypeName: Hancom Word Document
+            CFBundleTypeRole: Viewer
+            LSHandlerRank: Alternate
+            LSItemContentTypes:
+              - com.haansoft.HancomOfficeViewer.mac.hwp
+        CFBundleIconFile: ""
+        CFBundlePackageType: $(PRODUCT_BUNDLE_PACKAGE_TYPE)
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        LSApplicationCategoryType: public.app-category.productivity
+        LSHasLocalizedDisplayName: true
+        LSMinimumSystemVersion: $(MACOSX_DEPLOYMENT_TARGET)
+        UTImportedTypeDeclarations:
+          - UTTypeConformsTo:
+              - public.data
+            UTTypeDescription: Hancom Word Document
+            UTTypeIdentifier: com.haansoft.HancomOfficeViewer.mac.hwp
+            UTTypeReferenceURL: http://www.hancom.co.kr/
+            UTTypeTagSpecification:
+              public.filename-extension:
+                - hwp
     entitlements:
       path: macOS/macOS.entitlements
       properties:
@@ -39,17 +111,15 @@ targets:
             echo "warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint"
           fi
   
-  Test iOS:
+  Tests iOS:
     type: bundle.ui-testing
     platform: iOS
-    sources: [Test iOS]
 
-  Test macOS:
+  Tests macOS:
     type: bundle.ui-testing
     platform: macOS
-    sources: [Test macOS]
 
 packages:
-  Hwp-Swift:
+  CoreHwp:
     url: https://github.com/sboh1214/Hwp-Swift.git
-    exact: 0.14.1
+    exactVersion: 0.14.1
