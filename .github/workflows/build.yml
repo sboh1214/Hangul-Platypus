@@ -21,4 +21,4 @@ jobs:
     - name: Generate xcodeproj
       run: xcodegen generate
     - name: Release Build
-      run: xcodebuild -project Like\ Hangul.xcodeproj -scheme Like\ Hangul\ \(${{ matrix.platform }}\) -configuration Release
+      run: xcodebuild -project Hangul\ Platypus.xcodeproj -scheme Hangul\ Platypus\ \(${{ matrix.platform }}\) -configuration Release

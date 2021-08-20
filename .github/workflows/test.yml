@@ -21,4 +21,4 @@ jobs:
     - name: Generate xcodeproj
       run: xcodegen generate
     - name: Test
-      run: xcodebuild test -project Like\ Hangul.xcodeproj -scheme Tests\ ${{ matrix.platform }} -resultBundlePath HwpMac.xcresult
+      run: xcodebuild test -project Hangul\ Platypus.xcodeproj -scheme Tests\ ${{ matrix.platform }} -resultBundlePath HwpMac.xcresult
