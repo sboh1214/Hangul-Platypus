@@ -7,4 +7,5 @@ If you want English introduction of `Hangul Platypus`, please contact [sboh1214@
 ![Lint](https://github.com/sboh1214/Hangul-Platypus/workflows/Lint/badge.svg)
 ![Build](https://github.com/sboh1214/Hangul-Platypus/workflows/Build/badge.svg)
 ![Test](https://github.com/sboh1214/Hangul-Platypus/workflows/Test/badge.svg)
-[![Maintainability](https://api.codeclimate.com/v1/badges/22df6f53ce916538b285/maintainability)](https://codeclimate.com/github/sboh1214/Hangul-Platypus/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/81e918a789f1d307abc2/maintainability)](https://codeclimate.com/github/sboh1214/Hangul-Platypus/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/81e918a789f1d307abc2/test_coverage)](https://codeclimate.com/github/sboh1214/Hangul-Platypus/test_coverage)
