@@ -16,5 +16,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Install xcodegen
+      run: brew install xcodegen
+    - name: Generate xcodeproj
+      run: xcodegen generate
     - name: Test
-      run: xcodebuild test -project Like\ Hangul.xcodeproj -scheme Tests\ ${{ matrix.platform }} -resultBundlePath HwpMac.xcresult | xcpretty
+      run: xcodebuild test -project Hangul\ Platypus.xcodeproj -scheme Tests\ ${{ matrix.platform }} -resultBundlePath HwpMac.xcresult

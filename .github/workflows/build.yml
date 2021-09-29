@@ -11,10 +11,30 @@ jobs:
     runs-on: macos-latest
 
     strategy:
+      fail-fast: false
       matrix:
-        platform: ["iOS", "macOS"]
+        include:
+          - scheme: Hangul Platypus
+            platform: iOS
+            action: build
+          - scheme: Hangul Platypus
+            platform: macOS
+            action: build
 
     steps:
     - uses: actions/checkout@v2
-    - name: Release Build
-      run: xcodebuild -project Like\ Hangul.xcodeproj -scheme Like\ Hangul\ \(${{ matrix.platform }}\) -configuration Release | xcpretty
+    - uses: maxim-lobanov/setup-xcode@v1.3.0
+      with:
+        xcode-version: latest
+    - name: Install xcodegen
+      run: brew install xcodegen
+    - name: Generate xcodeproj
+      run: xcodegen generate
+    - uses: mxcl/xcodebuild@v1.9.2
+      with:
+        platform: ${{ matrix.platform }}
+        scheme: ${{ matrix.scheme }} (${{ matrix.platform }})
+        action: ${{ matrix.action }}
+        code-coverage: true
+        verbosity: xcpretty
+        upload-logs: always

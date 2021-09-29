@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3625A03F25B6D35300C5C3FE"
-               BuildableName = "Like Hangul.app"
-               BlueprintName = "Like Hangul (iOS)"
-               ReferencedContainer = "container:Like Hangul.xcodeproj">
+               BlueprintIdentifier = "93CC57129F2242AAD666FF3A"
+               BuildableName = "Hangul Platypus (macOS).app"
+               BlueprintName = "Hangul Platypus (macOS)"
+               ReferencedContainer = "container:Hangul Platypus.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,10 +44,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3625A03F25B6D35300C5C3FE"
-            BuildableName = "Like Hangul.app"
-            BlueprintName = "Like Hangul (iOS)"
-            ReferencedContainer = "container:Like Hangul.xcodeproj">
+            BlueprintIdentifier = "93CC57129F2242AAD666FF3A"
+            BuildableName = "Hangul Platypus (macOS).app"
+            BlueprintName = "Hangul Platypus (macOS)"
+            ReferencedContainer = "container:Hangul Platypus.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -61,10 +61,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3625A03F25B6D35300C5C3FE"
-            BuildableName = "Like Hangul.app"
-            BlueprintName = "Like Hangul (iOS)"
-            ReferencedContainer = "container:Like Hangul.xcodeproj">
+            BlueprintIdentifier = "93CC57129F2242AAD666FF3A"
+            BuildableName = "Hangul Platypus (macOS).app"
+            BlueprintName = "Hangul Platypus (macOS)"
+            ReferencedContainer = "container:Hangul Platypus.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
